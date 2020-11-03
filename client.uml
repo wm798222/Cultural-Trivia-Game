@@ -1,0 +1,2751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_95uWMBBtEeqjYMyamv5Nwg" name="client">
+    <eAnnotations xmi:id="_-FObkBBtEeqjYMyamv5Nwg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_-FObkRBtEeqjYMyamv5Nwg" source="codegen">
+        <details xmi:id="_-FObkhBtEeqjYMyamv5Nwg" key="codegenDirectory" value="/FinalProject/src"/>
+        <details xmi:id="_-nBhEBBtEeqjYMyamv5Nwg" key="AssociatedSourceCode" value="/FinalProject/src/yx48_zh16/client/clientMVC/clientController/ClientController.java;1489671276/1;/FinalProject/src/yx48_zh16/client/clientMVC/clientController/IMiniAccessMainAdapter.java;1423428244/1;/FinalProject/src/yx48_zh16/client/clientMiniMVC/clientMiniView/IClientMiniViewUpdateAdapter.java;1054567415/1;/FinalProject/src/yx48_zh16/client/clientMVC/clientModel/IModel2ViewAdapter.java;1689850703/1;/FinalProject/src/yx48_zh16/client/clientMVC/clientView/ClientView.java;800236629/1;/FinalProject/src/yx48_zh16/client/clientMVC/clientView/IView2ModelAdapter.java;1562129979/1;/FinalProject/src/yx48_zh16/client/clientMiniMVC/IMainAccessMiniAdapter.java;2166710511/1;/FinalProject/src/yx48_zh16/client/clientMiniMVC/clientMiniController/ClientMiniController.java;108006234/1;/FinalProject/src/yx48_zh16/client/clientMiniMVC/clientMiniModel/ClientMiniModel.java;186614936/1;/FinalProject/src/yx48_zh16/client/clientMiniMVC/clientMiniModel/IMiniModel2ViewAdapter.java;2907950913/1;/FinalProject/src/yx48_zh16/client/clientMiniMVC/clientMiniView/ClientMiniView.java;357095368/1;/FinalProject/src/yx48_zh16/client/clientMVC/clientModel/ClientModel.java;590416344/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_-aKJwBBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_-aKJwRBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_-aKJwhBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_-aKJwxBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_-aKJxBBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_-aKJxRBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_-aKJxhBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_-aKJxxBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_-aKJyBBtEeqjYMyamv5Nwg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-Y17IBBtEeqjYMyamv5Nwg" name="yx48_zh16">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-Y2iMBBtEeqjYMyamv5Nwg" name="client">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-Y2iMRBtEeqjYMyamv5Nwg" name="clientMVC">
+          <packagedElement xmi:type="uml:Package" xmi:id="_-Y3wVRBtEeqjYMyamv5Nwg" name="clientModel">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_-aTTsBBtEeqjYMyamv5Nwg" name="IModel2ViewAdapter">
+              <ownedComment xmi:id="_-fUWmxBtEeqjYMyamv5Nwg">
+                <body>The definition of the adapter for the main MVC model to update.&#xD;
+@author skylar, minh&#xD;
+ *</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_-aT6wBBtEeqjYMyamv5Nwg" name="startDiscoveryPanel">
+                <ownedComment xmi:id="_-fU9oBBtEeqjYMyamv5Nwg">
+                  <body>Initialize discovery server panel.</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eJR4BBtEeqjYMyamv5Nwg" name="addRoom">
+                <ownedComment xmi:id="_-fUWnBBtEeqjYMyamv5Nwg">
+                  <body>Add a room.&#xD;
+	 * @param roomID - room ID&#xD;
+	 * @param roomName - name of the chat room&#xD;
+	 * @param userName - name of user&#xD;
+	 * @param currentMembers  - current members in the chat room&#xD;
+	 * @return the auto-get-back mainAccessMiniAdapter upon giving the miniAccessMainAdapter.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eJR4RBtEeqjYMyamv5Nwg" name="roomID" type="_-dDswRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eJR4hBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-eJR4xBtEeqjYMyamv5Nwg" name="userName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-eJR5BBtEeqjYMyamv5Nwg" name="currentMembers" type="_-dDFsRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eJR5RBtEeqjYMyamv5Nwg" type="_-auKcBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eJ48RBtEeqjYMyamv5Nwg" name="updateConnectedUser">
+                <ownedComment xmi:id="_-fU9oRBtEeqjYMyamv5Nwg">
+                  <body>Add newly connected user to the list of connected users.&#xD;
+	 * @param newConnection - a newly connected user.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eKgABBtEeqjYMyamv5Nwg" name="newConnection" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eKgARBtEeqjYMyamv5Nwg" name="updateAvailRooms">
+                <ownedComment xmi:id="_-fU9ohBtEeqjYMyamv5Nwg">
+                  <body>Add a newly received room to the collection of all available rooms.&#xD;
+	 * @param availRoom - a newly received room</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eKgAhBtEeqjYMyamv5Nwg" name="availRoom" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eLHEBBtEeqjYMyamv5Nwg" name="updateConnectedRooms">
+                <ownedComment xmi:id="_-fU9oxBtEeqjYMyamv5Nwg">
+                  <body>Add a newly connected room to the collection of all connected rooms.&#xD;
+	 * @param chatRoomMemberWrapper - a new connected room with a wrapper outside</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eLHERBtEeqjYMyamv5Nwg" name="chatRoomMemberWrapper" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eLHEhBtEeqjYMyamv5Nwg" name="deleteFromConnectedChatRoom">
+                <ownedComment xmi:id="_-fU9pBBtEeqjYMyamv5Nwg">
+                  <body>Delete a chat room from the list of available rooms&#xD;
+	 * @param chatRoomMemberWrapper - the chat room to be deleted.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eLHExBtEeqjYMyamv5Nwg" name="chatRoomMemberWrapper" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eLuIBBtEeqjYMyamv5Nwg" name="deleteFromConnectedUsers">
+                <ownedComment xmi:id="_-fU9pRBtEeqjYMyamv5Nwg">
+                  <body>Method for deleting a user from all connected users.&#xD;
+	 * @param userWrapper - the user to be deleted</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eLuIRBtEeqjYMyamv5Nwg" name="userWrapper" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eLuIhBtEeqjYMyamv5Nwg" name="updateAvailableUser">
+                <ownedComment xmi:id="_-fU9phBtEeqjYMyamv5Nwg">
+                  <body>Add a user to the collection of all available users.&#xD;
+	 * @param userWrapper - the user to be added with a wrapper outside.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eLuIxBtEeqjYMyamv5Nwg" name="userWrapper" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-bDhoBBtEeqjYMyamv5Nwg" name="ClientModel">
+              <ownedComment xmi:id="_-fWy1hBtEeqjYMyamv5Nwg">
+                <body>ChatApp model&#xD;
+@author minhvtm99&#xD;
+ *</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_-fA0kRBtEeqjYMyamv5Nwg" name="Client" type="_-dET0RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-f2iERBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fBboBBtEeqjYMyamv5Nwg" name="ClientStub" visibility="private" type="_-dET0RBtEeqjYMyamv5Nwg" association="_-f3JIBBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fCCsBBtEeqjYMyamv5Nwg" name="ClientName" visibility="private">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-fCpwRBtEeqjYMyamv5Nwg" name="defautlCmd" visibility="private" type="_-d1I0RBtEeqjYMyamv5Nwg" association="_-f3JIxBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-fDQ0RBtEeqjYMyamv5Nwg" value="new AConnectionMsgCmd&lt;IClientServerMsg>() {&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;/**&#xD;&#xA;&#x9;&#x9; * &#xD;&#xA;&#x9;&#x9; */&#xD;&#xA;&#x9;&#x9;private static final long serialVersionUID = -411957128823345214L;&#xD;&#xA;&#xD;&#xA;&#x9;&#x9;@Override&#xD;&#xA;&#x9;&#x9;public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;&#xA;&#x9;&#x9;&#x9;// If it gets here, other Clients have sent something strange so send back a failure msg&#xD;&#xA;&#x9;&#x9;&#x9;sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(IFailureMsg.make(&quot;Wrong msg type!&quot;), ClientStub));&#xD;&#xA;&#x9;&#x9;&#x9;return null;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;&#x9;}"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-fD34RBtEeqjYMyamv5Nwg" name="ClientMessageProcessingAlgo" visibility="private" type="_-d6oYRBtEeqjYMyamv5Nwg" association="_-f3wMRBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fEe8hBtEeqjYMyamv5Nwg" name="availRooms" visibility="private" type="_-dCeoBBtEeqjYMyamv5Nwg" association="_-f4XQRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-fFGARBtEeqjYMyamv5Nwg" value="new ArrayList&lt;ITeam>()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-fFtERBtEeqjYMyamv5Nwg" name="connectedRooms" visibility="private" type="_-dCeoBBtEeqjYMyamv5Nwg" association="_-f4XRBBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-fGUIRBtEeqjYMyamv5Nwg" value="new ArrayList&lt;Team>()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-fGUIxBtEeqjYMyamv5Nwg" name="ClientUpdateAdapter" type="_-dHXIRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-f4-URBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fG7MBBtEeqjYMyamv5Nwg" name="rmiUtils" visibility="private" type="_-d8dkRBtEeqjYMyamv5Nwg" association="_-f5lYBBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fG7MhBtEeqjYMyamv5Nwg" name="localRegistry" visibility="private" type="_-dzToRBtEeqjYMyamv5Nwg" association="_-f5lYxBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fHiQBBtEeqjYMyamv5Nwg" name="iModel2ViewAdapter" visibility="package" type="_-aTTsBBtEeqjYMyamv5Nwg" association="_-f6McRBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fHiQhBtEeqjYMyamv5Nwg" name="connectedClientStubs" visibility="package" type="_-dCeoBBtEeqjYMyamv5Nwg" association="_-f6MdBBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-fIJURBtEeqjYMyamv5Nwg" value="new ArrayList&lt;IConnection>()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-fIJUxBtEeqjYMyamv5Nwg" name="availableClientStubs" visibility="package" type="_-dCeoBBtEeqjYMyamv5Nwg" association="_-f6zgRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-fIwYRBtEeqjYMyamv5Nwg" value="new ArrayList&lt;IClient>()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-fJXcBBtEeqjYMyamv5Nwg" name="discConn" visibility="private" type="_-d7PcxBtEeqjYMyamv5Nwg" association="_-f7akRBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fJXchBtEeqjYMyamv5Nwg" name="remoteAPIStubFac" visibility="private" type="_-d72gRBtEeqjYMyamv5Nwg" association="_-f8BoBBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-fJ-ghBtEeqjYMyamv5Nwg" name="_roomIdToMainAccessMiniMap" visibility="private" type="_-dz6sRBtEeqjYMyamv5Nwg" association="_-f8BoxBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-fKlkRBtEeqjYMyamv5Nwg" value="new HashMap&lt;UUID, IMainAccessMiniAdapter>()"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fRTRBBtEeqjYMyamv5Nwg" name="ClientModel" specification="_-efQIBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fRTRRBtEeqjYMyamv5Nwg" name="iModel2ViewAdapter" type="_-aTTsBBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fRTRhBtEeqjYMyamv5Nwg" name="ClientUpdateAdapter" type="_-dHXIRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fRTRxBtEeqjYMyamv5Nwg" type="_-bDhoBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>this.iModel2ViewAdapter = iModel2ViewAdapter;&#xD;
+		this.ClientUpdateAdapter = ClientUpdateAdapter;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fRTSBBtEeqjYMyamv5Nwg" name="start" specification="_-bF94BBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fRTSRBtEeqjYMyamv5Nwg" name="Clientname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.ClientName = Clientname;&#xD;
+		startRMI();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fR6UBBtEeqjYMyamv5Nwg" name="sendMsgThread" specification="_-ef3MBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fR6URBtEeqjYMyamv5Nwg" name="receiver" type="_-dE64RBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fR6UhBtEeqjYMyamv5Nwg" name="msg" type="_-d1v4BBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>Thread msgThread = new Thread() {&#xD;
+			public void run() {&#xD;
+				try {&#xD;
+					receiver.receiveMsg(msg);&#xD;
+				} catch (RemoteException e) {&#xD;
+					// TODO Auto-generated catch block&#xD;
+					e.printStackTrace();&#xD;
+				}&#xD;
+			}&#xD;
+		};&#xD;
+		msgThread.start();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fR6UxBtEeqjYMyamv5Nwg" name="startRMI" specification="_-bGk8BBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>//		System.setProperty(&quot;java.security.policy&quot;,&quot;file:/provided/rmiUtils/security.policy&quot;);&#xD;
+		rmiUtils = new RMIUtils(text -> System.out.println(text));&#xD;
+		rmiUtils.startRMI(IRMI_Defs.CLASS_SERVER_PORT_EXTRA);&#xD;
+		&#xD;
+//	    // instantiate the two utility classes now that the RMIUtils has been started:&#xD;
+	    try {&#xD;
+			this.discConn = new DiscoveryConnector(rmiUtils, this.ClientName, IClient.BOUND_NAME);&#xD;
+&#xD;
+		} catch (RemoteException e1) {&#xD;
+			e1.printStackTrace();&#xD;
+		} // getClientName() and getBoundName() are accessors for that info in the model&#xD;
+	    this.remoteAPIStubFac = new RemoteAPIStubFactory&lt;IClient>(rmiUtils); // Instantiate the API-specific factory, replacing the &quot;IConnectionEntity&quot; with the proper API-defined Remote interface&#xD;
+//	    &#xD;
+//	    // Do anything else that needs to be done to initialize the system...&#xD;
+//	    // The connection-level stub should be created and bound into the local Registry at this point, before the discovery panel is started.&#xD;
+//	    Client = new IClient() {    	&#xD;
+//	    	    	&#xD;
+//			@Override&#xD;
+//			public void receiveApplicationMsg(ConnectionDataPacket&lt;? extends IClientServerMsg> msg) throws RemoteException {&#xD;
+//				System.out.println(msg.getData().getID());&#xD;
+//				Thread msgThread = new Thread() {&#xD;
+//					public void run() {&#xD;
+//						msg.execute(ClientMessageProcessingAlgo);&#xD;
+//					}&#xD;
+//				};&#xD;
+//				msgThread.start();&#xD;
+//			}&#xD;
+//			&#xD;
+//			@Override&#xD;
+//			public String getName() throws RemoteException {&#xD;
+//				// TODO Auto-generated method stub&#xD;
+//				return ClientName;&#xD;
+//			}&#xD;
+//		};	&#xD;
+	    Client = new IClient() {&#xD;
+&#xD;
+			@Override&#xD;
+			public String getType() throws RemoteException {&#xD;
+				// TODO Auto-generated method stub&#xD;
+				return IClient.BOUND_NAME;&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public Void receiveMsg(ConnectionDataPacket&lt;? extends IClientServerMsg> msg) throws RemoteException {&#xD;
+				// TODO Auto-generated method stub&#xD;
+				System.out.println(msg.getData().getID());&#xD;
+				Thread msgThread = new Thread() {&#xD;
+					public void run() {&#xD;
+						msg.execute(ClientMessageProcessingAlgo);&#xD;
+					}&#xD;
+				};&#xD;
+				msgThread.start();&#xD;
+				return null;&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public String getName() throws RemoteException {&#xD;
+				// TODO Auto-generated method stub&#xD;
+				return ClientName;&#xD;
+			}    	&#xD;
+		};&#xD;
+		&#xD;
+		localRegistry = rmiUtils.getLocalRegistry();&#xD;
+		try {&#xD;
+			ClientStub = (IClient) UnicastRemoteObject.exportObject(Client, IRMI_Defs.STUB_PORT_SERVER);&#xD;
+			localRegistry.bind(IClient.BOUND_NAME, ClientStub);&#xD;
+		} catch (RemoteException | AlreadyBoundException e) {&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		&#xD;
+		ClientMessageProcessingAlgo = new DataPacketAlgo&lt;Void, Void>(defautlCmd) {&#xD;
+			/**&#xD;
+			 * &#xD;
+			 */&#xD;
+			private static final long serialVersionUID = 8157031229389953675L;&#xD;
+			&#xD;
+			DataPacketAlgo&lt;Void, Void> thisAlgo = this;&#xD;
+			{&#xD;
+				AConnectionMsgCmd&lt;IClientServerMsg> connectMsgHandling = new AConnectionMsgCmd&lt;IClientServerMsg>() {&#xD;
+&#xD;
+					/**&#xD;
+					 * &#xD;
+					 */&#xD;
+					private static final long serialVersionUID = 46055148648415174L;&#xD;
+&#xD;
+					@Override&#xD;
+					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;
+						IConnection receivedUser = (IConnection) host.getSender();&#xD;
+			        	connectedClientStubs.add(receivedUser);&#xD;
+			        	iModel2ViewAdapter.updateConnectedUser(new UserWrapper(receivedUser, ClientUpdateAdapter));&#xD;
+				        //TODO: return status message&#xD;
+						return null;&#xD;
+					}&#xD;
+				};&#xD;
+				thisAlgo.setCmd(IConnectMsg.GetID(), connectMsgHandling);&#xD;
+				&#xD;
+				// Handle Success Msg&#xD;
+				AConnectionMsgCmd&lt;IClientServerMsg> successMsgHandling = new AConnectionMsgCmd&lt;IClientServerMsg>() {&#xD;
+&#xD;
+					/**&#xD;
+					 * &#xD;
+					 */&#xD;
+					private static final long serialVersionUID = -3950956148640170458L;&#xD;
+&#xD;
+					@Override&#xD;
+					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;
+						// TODO Auto-generated method stub&#xD;
+//						sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(ISuccessMsg.make(&quot;Success!&quot;), ClientStub));&#xD;
+						return null;&#xD;
+					}&#xD;
+					&#xD;
+				};&#xD;
+				thisAlgo.setCmd(ISuccessMsg.GetID(), successMsgHandling);&#xD;
+//				&#xD;
+				// Handle Success Msg&#xD;
+				AConnectionMsgCmd&lt;IClientServerMsg> failureMsgHandling = new AConnectionMsgCmd&lt;IClientServerMsg>() {&#xD;
+&#xD;
+					/**&#xD;
+					 * &#xD;
+					 */&#xD;
+					private static final long serialVersionUID = -1483829431959778274L;&#xD;
+&#xD;
+					@Override&#xD;
+					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;
+						// TODO Auto-generated method stub&#xD;
+//						sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(IFailureMsg.make(&quot;Wrong msg type!&quot;), ClientStub));&#xD;
+						return null;&#xD;
+					}&#xD;
+					&#xD;
+				};&#xD;
+				thisAlgo.setCmd(IFailureMsg.GetID(), failureMsgHandling);&#xD;
+				&#xD;
+				&#xD;
+//				&#xD;
+				// Handle chat rooms requesting from the other Clients&#xD;
+				AConnectionMsgCmd&lt;IClientServerMsg> requestChatRoomsHandling = new AConnectionMsgCmd&lt;IClientServerMsg>() {&#xD;
+&#xD;
+					/**&#xD;
+					 * &#xD;
+					 */&#xD;
+					private static final long serialVersionUID = -4395881900843821185L;&#xD;
+&#xD;
+					@Override&#xD;
+					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host,&#xD;
+							Void... params) {&#xD;
+						//Send back IAddChatRoomsCollectionMsg&#xD;
+						ArrayList&lt;ITeam> returnedRooms = new ArrayList&lt;ITeam>();&#xD;
+						for (Team room : connectedRooms) {&#xD;
+							Team newRoom = new Team(room.getID(), room.getName(), room.getMe(), ClientName);&#xD;
+							for (IPlayer currentMember : room.getPlayers()) {&#xD;
+								newRoom.addUser(currentMember);&#xD;
+							}&#xD;
+							newRoom.addUser(room.getMe());&#xD;
+							returnedRooms.add((ITeam) newRoom);&#xD;
+						}&#xD;
+						System.out.println(&quot;check?&quot;);&#xD;
+						System.out.println(host.getSender());&#xD;
+						sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(IReturnTeamsCollectionMsg.make(returnedRooms), ClientStub));&#xD;
+&#xD;
+						//TODO: return status message&#xD;
+						return null;&#xD;
+					}&#xD;
+				};&#xD;
+				thisAlgo.setCmd(IRequestTeamsCollectionMsg.GetID(), requestChatRoomsHandling);&#xD;
+//				&#xD;
+				// Handle chat rooms receving from other Clients&#xD;
+				AConnectionMsgCmd&lt;IClientServerMsg> receivingChatRoomsHandling = new AConnectionMsgCmd&lt;IClientServerMsg>() {&#xD;
+&#xD;
+					/**&#xD;
+					 * &#xD;
+					 */&#xD;
+					private static final long serialVersionUID = -6124753801384109887L;&#xD;
+&#xD;
+					@Override&#xD;
+					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;
+						System.out.println(&quot;Processing chatrooms received from sender&quot;);&#xD;
+						Collection&lt;ITeam> newAvailableRooms = ((IReturnTeamsCollectionMsg) host.getData()).getCollection();&#xD;
+				        for (ITeam room : newAvailableRooms) {&#xD;
+				        	availRooms.add(room);&#xD;
+				        	iModel2ViewAdapter.updateAvailRooms(new TeamWrapper(room, host.getSender()));&#xD;
+				        }&#xD;
+				        sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(ISuccessMsg.make(&quot;Got chatrooms&quot;), ClientStub));&#xD;
+				        //TODO: return status message&#xD;
+						return null;&#xD;
+					}&#xD;
+				};&#xD;
+				thisAlgo.setCmd(IReturnTeamsCollectionMsg.GetID(), receivingChatRoomsHandling);&#xD;
+//				&#xD;
+//				// Handle Clients requesting other Clients&#xD;
+//				AClientMsgCmd&lt;IClientServerMsg> requestClientsHandling = new AClientMsgCmd&lt;IClientServerMsg>() {&#xD;
+//&#xD;
+//					@Override&#xD;
+//					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host,&#xD;
+//							Void... params) {&#xD;
+//						//Send back IAddClientsCollectionMsg&#xD;
+//						sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(IAddClientsCollectionMsg.make(connectedClientStubs), ClientStub));&#xD;
+//&#xD;
+//						return null;&#xD;
+//					}&#xD;
+//				};&#xD;
+//				thisAlgo.setCmd(IRequestClientsCollectionMsg.GetID(), requestClientsHandling);&#xD;
+//				&#xD;
+//				// Handle Clients receiving from other Clients&#xD;
+//				AClientMsgCmd&lt;IClientServerMsg> receivingClientsHandling = new AClientMsgCmd&lt;IClientServerMsg>() {&#xD;
+//&#xD;
+//					@Override&#xD;
+//					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;
+//						System.out.println(&quot;Processing Clients received from sender&quot;);&#xD;
+//						Collection&lt;IClient> newAvailableClients = ((IAddClientsCollectionMsg) host.getData()).getCollection();&#xD;
+//						System.out.println(newAvailableClients);&#xD;
+//				        for (IClient Client : newAvailableClients) {&#xD;
+//				        	availableClientStubs.add(Client);&#xD;
+//				        	iModel2ViewAdapter.updateAvailableClient(new UserWrapper(Client, ClientUpdateAdapter));&#xD;
+//				        }&#xD;
+//				        &#xD;
+//				        //TODO: return status message&#xD;
+//						return null;&#xD;
+//					}&#xD;
+//&#xD;
+//				};&#xD;
+//				thisAlgo.setCmd(IAddClientsCollectionMsg.GetID(), receivingClientsHandling);&#xD;
+//				&#xD;
+//				&#xD;
+//				// Handle invite to room &#xD;
+//				AClientMsgCmd&lt;IClientServerMsg> inviteMsgHandling = new AClientMsgCmd&lt;IClientServerMsg>() {&#xD;
+//&#xD;
+//					@Override&#xD;
+//					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;
+//						ITeam roomReceived = ((IInviteToRoomMsg) host.getData()).getChatRoom();&#xD;
+//						&#xD;
+//						IMainAccessMiniAdapter mainAccessMini = iModel2ViewAdapter.addRoom(roomReceived.getId(), roomReceived.getName(), ClientName, roomReceived.getChatClients());&#xD;
+//						mainAccessMini.joinRoom();&#xD;
+//						iModel2ViewAdapter.updateConnectedRooms(new TeamWrapper(mainAccessMini.getChatRoom(), host.getSender()));&#xD;
+//						connectedRooms.add(mainAccessMini.getChatRoom());&#xD;
+//						_roomIdToMainAccessMiniMap.put(mainAccessMini.getChatRoom().getId(), mainAccessMini);						&#xD;
+//				        sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(ISuccessMsg.make(&quot;Accept invitation&quot;), ClientStub));&#xD;
+//				        //TODO: return status message&#xD;
+//						return null;&#xD;
+//					}&#xD;
+//				};&#xD;
+//				thisAlgo.setCmd(IInviteToRoomMsg.GetID(), inviteMsgHandling);&#xD;
+//				&#xD;
+				// Handle request to join a team&#xD;
+				AConnectionMsgCmd&lt;IClientServerMsg> requestToJoinHandling = new AConnectionMsgCmd&lt;IClientServerMsg>() {&#xD;
+&#xD;
+					/**&#xD;
+					 * &#xD;
+					 */&#xD;
+					private static final long serialVersionUID = 998706354345720984L;&#xD;
+&#xD;
+					@Override&#xD;
+					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;
+						// Send back the most updated version of the room for Client to join&#xD;
+						IMainAccessMiniAdapter adpt = _roomIdToMainAccessMiniMap.get(((IJoinTeamMsg) host.getData()).getTeamToJoin().getID());&#xD;
+						&#xD;
+						// Send a failure msg if you are not part of the room anymore&#xD;
+						if (adpt == null) {&#xD;
+							sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(IFailureMsg.make(&quot;Client gone from requested chat room&quot;), ClientStub));&#xD;
+							return null;&#xD;
+						}&#xD;
+						Team roomRequested = adpt.getChatRoom();&#xD;
+						&#xD;
+&#xD;
+						Team roomToSendBack = new Team(roomRequested.getID(), roomRequested.getName(), roomRequested.getMe(), ClientName);&#xD;
+						for (IPlayer currentMember : roomRequested.getPlayers()) {&#xD;
+							roomToSendBack.addUser(currentMember);&#xD;
+						}&#xD;
+						roomToSendBack.addUser(roomRequested.getMe());&#xD;
+						sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(IAddToTeamMsg.make((ITeam) roomToSendBack), ClientStub));&#xD;
+&#xD;
+				        //TODO: return status message&#xD;
+						return null;&#xD;
+					}&#xD;
+				};&#xD;
+				thisAlgo.setCmd(IJoinTeamMsg.GetID(), requestToJoinHandling);&#xD;
+//				&#xD;
+//				&#xD;
+				// Handle add to room &#xD;
+				AConnectionMsgCmd&lt;IClientServerMsg> addToRoomMsgHandling = new AConnectionMsgCmd&lt;IClientServerMsg>() {&#xD;
+&#xD;
+					/**&#xD;
+					 * &#xD;
+					 */&#xD;
+					private static final long serialVersionUID = 8764959913989910418L;&#xD;
+&#xD;
+					@Override&#xD;
+					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IClientServerMsg> host, Void... params) {&#xD;
+						System.out.println(&quot;Got added to a room&quot;);&#xD;
+						ITeam roomReceived = ((IAddToTeamMsg) host.getData()).getTeam();&#xD;
+											&#xD;
+						IMainAccessMiniAdapter mainAccessMini = iModel2ViewAdapter.addRoom(roomReceived.getID(), roomReceived.getName(), ClientName, roomReceived.getPlayers());&#xD;
+						mainAccessMini.joinRoom();&#xD;
+						iModel2ViewAdapter.updateConnectedRooms(new TeamWrapper(mainAccessMini.getChatRoom(), host.getSender()));&#xD;
+						connectedRooms.add(mainAccessMini.getChatRoom());&#xD;
+						_roomIdToMainAccessMiniMap.put(mainAccessMini.getChatRoom().getID(), mainAccessMini);&#xD;
+				        sendMsgThread(host.getSender(), new ConnectionDataPacket&lt;IClientServerMsg>(ISuccessMsg.make(&quot;Added to a chatroom&quot;), ClientStub));&#xD;
+&#xD;
+				        //TODO: return status message&#xD;
+						return null;&#xD;
+					}&#xD;
+				};&#xD;
+				thisAlgo.setCmd(IAddToTeamMsg.GetID(), addToRoomMsgHandling);&#xD;
+//				&#xD;
+				// Handle Client quitting&#xD;
+				AConnectionMsgCmd&lt;IQuitMsg> quitMsgHandling = new AConnectionMsgCmd&lt;IQuitMsg>() {&#xD;
+&#xD;
+					/**&#xD;
+					 * &#xD;
+					 */&#xD;
+					private static final long serialVersionUID = 6192231362815737517L;&#xD;
+&#xD;
+					@Override&#xD;
+					public Void apply(IDataPacketID index, ConnectionDataPacket&lt;IQuitMsg> host, Void... params) {&#xD;
+						// TODO: remove Client from the dropdown from the view&#xD;
+						connectedClientStubs.remove(host.getSender());&#xD;
+						iModel2ViewAdapter.deleteFromConnectedUsers(new UserWrapper(host.getSender(), ClientUpdateAdapter));&#xD;
+						return null;&#xD;
+					}&#xD;
+				};&#xD;
+				thisAlgo.setCmd(IQuitMsg.GetID(), quitMsgHandling);&#xD;
+			}&#xD;
+			&#xD;
+		};&#xD;
+&#xD;
+		&#xD;
+		&#xD;
+	    iModel2ViewAdapter.startDiscoveryPanel(); // Call out to the view to start the discovery server panel now that the rmiUtils has started.&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fR6VBBtEeqjYMyamv5Nwg" name="quit" specification="_-bHMABBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>shutdown();&#xD;
+		ArrayList&lt;Thread> threadList = new ArrayList&lt;Thread>();&#xD;
+		for (ITeam room : this.connectedRooms) {&#xD;
+			GameDataPacket&lt;ILeaveMsg> leaveMessage = new GameDataPacket&lt;ILeaveMsg>(ILeaveMsg.make(((Team)room).getMe()), ((Team)room).getMe());&#xD;
+			threadList = ((Team)room).sendChatRoomMsg(leaveMessage);&#xD;
+		}&#xD;
+		for (IConnection Client : this.connectedClientStubs) {&#xD;
+			sendMsgThread(Client, new ConnectionDataPacket&lt;IClientServerMsg>(IQuitMsg.make(this.ClientStub), this.ClientStub));&#xD;
+		}&#xD;
+		for (Thread thread : threadList) {&#xD;
+			try {&#xD;
+				thread.join();&#xD;
+			} catch (InterruptedException e) {&#xD;
+				// TODO Auto-generated catch block&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		}&#xD;
+		rmiUtils.stopRMI();&#xD;
+		System.exit(0);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fR6VRBtEeqjYMyamv5Nwg" name="createTeam" specification="_-bHMARBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fR6VhBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>IMainAccessMiniAdapter mainAccessMini = iModel2ViewAdapter.addRoom(null, roomName, this.ClientName, new ArrayList&lt;IPlayer>());&#xD;
+		this.iModel2ViewAdapter.updateConnectedRooms(new TeamWrapper(mainAccessMini.getChatRoom(), this.Client));&#xD;
+		this.connectedRooms.add(mainAccessMini.getChatRoom());&#xD;
+		this._roomIdToMainAccessMiniMap.put(mainAccessMini.getChatRoom().getID(), mainAccessMini);&#xD;
+		System.out.println(_roomIdToMainAccessMiniMap.size());&#xD;
+&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fShYBBtEeqjYMyamv5Nwg" name="delete" specification="_-d9rsBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fShYRBtEeqjYMyamv5Nwg" name="miniAdapter" type="_-auKcBBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>this._roomIdToMainAccessMiniMap.remove(miniAdapter.getChatRoom().getID());&#xD;
+&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fShYhBtEeqjYMyamv5Nwg" name="connectToDiscoveryServer" specification="_-egeQRBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fShYxBtEeqjYMyamv5Nwg" name="category">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-fShZBBtEeqjYMyamv5Nwg" name="watchOnly">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-fShZRBtEeqjYMyamv5Nwg" name="updateFn" type="_-dBQgRBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>try {&#xD;
+		 this.discConn.connectToDiscoveryServer(category, watchOnly, updateFn);&#xD;
+&#xD;
+	     } catch (RemoteException e) {&#xD;
+	        System.err.println(&quot;[ChatModel.connectToDiscoveryServer(&quot;+category+&quot;)] Exception: &quot;+e);&#xD;
+	        e.printStackTrace();&#xD;
+	     }&#xD;
+	 </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fShZhBtEeqjYMyamv5Nwg" name="connectToEndPoint" specification="_-ehsYBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fShZxBtEeqjYMyamv5Nwg" name="endPt" type="_-dGJARBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>try {&#xD;
+	    	System.out.println(&quot;End point Client????&quot;);&#xD;
+	    	System.out.println(remoteAPIStubFac.get(endPt));&#xD;
+	        IConnection newConnection = remoteAPIStubFac.get(endPt);&#xD;
+	        this.connectedClientStubs.add(newConnection);&#xD;
+	        iModel2ViewAdapter.updateConnectedUser(new UserWrapper(newConnection, ClientUpdateAdapter));&#xD;
+	        //Auto connect back&#xD;
+	        sendMsgThread(newConnection, new ConnectionDataPacket&lt;IConnectMsg>(IConnectMsg.make(ClientStub), ClientStub));&#xD;
+	        &#xD;
+	    } catch (Exception e) {&#xD;
+	        System.err.println(&quot;[ChatModel.connectTo(&quot;+endPt+&quot;)] Exception while retrieving stub: &quot;+e);&#xD;
+	        e.printStackTrace();&#xD;
+	    } &#xD;
+	 </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fShaBBtEeqjYMyamv5Nwg" name="getChatRooms" specification="_-ehsYhBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fShaRBtEeqjYMyamv5Nwg" name="user" type="_-dE64RBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>try {&#xD;
+			System.out.println(&quot;sent request chatrooms to&quot; + user.getName());&#xD;
+		} catch (RemoteException e) {&#xD;
+			// TODO Auto-generated catch block&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		sendMsgThread(user, new ConnectionDataPacket&lt;IRequestTeamsCollectionMsg>(IRequestTeamsCollectionMsg.make(), ClientStub));&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fShahBtEeqjYMyamv5Nwg" name="shutdown" specification="_-bHzEBBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>if(null != this.discConn) {  // just in case one was never made&#xD;
+	       this.discConn.disconnect();  // tells the main discovery server to remove the associated endpoint.&#xD;
+	   }&#xD;
+&#xD;
+	   // Do rest of shutdown processes, e.g. leave rooms, disconnect from connection-level stubs, etc.&#xD;
+	   // Shutdown the rmiUtils LAST.&#xD;
+	 </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fShaxBtEeqjYMyamv5Nwg" name="joinRoom" specification="_-eiTcBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fShbBBtEeqjYMyamv5Nwg" name="chatRoom" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>//TODO: requesting the most updated chatroom&#xD;
+		try {&#xD;
+			System.out.println(&quot;Trying to join room created by &quot;+ chatRoom.getCreator().getName());&#xD;
+		} catch (RemoteException e1) {&#xD;
+			// TODO Auto-generated catch block&#xD;
+			e1.printStackTrace();&#xD;
+		}&#xD;
+		sendMsgThread(chatRoom.getCreator(), new ConnectionDataPacket&lt;IClientServerMsg>(IJoinTeamMsg.make(chatRoom.getChatRoom()), ClientStub));&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fTIcBBtEeqjYMyamv5Nwg" name="deleteFromChatRoom" specification="_-eiTchBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fTIcRBtEeqjYMyamv5Nwg" name="chatroom" type="_-dH-MRBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>this.connectedRooms.remove(chatroom);&#xD;
+		iModel2ViewAdapter.deleteFromConnectedChatRoom(new TeamWrapper(chatroom, null));&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fTIchBtEeqjYMyamv5Nwg" name="connectToClient" specification="_-ei6gBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fTIcxBtEeqjYMyamv5Nwg" name="user" type="_-dE64RBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>connectedClientStubs.add(user);&#xD;
+     iModel2ViewAdapter.updateConnectedUser(new UserWrapper(user, ClientUpdateAdapter));&#xD;
+     //Auto connect back&#xD;
+     sendMsgThread(user, new ConnectionDataPacket&lt;IConnectMsg>(IConnectMsg.make(ClientStub), ClientStub));&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fTIdBBtEeqjYMyamv5Nwg" name="getConnectedClients" specification="_-bIaIBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fTIdRBtEeqjYMyamv5Nwg" type="_-dCeoBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>return this.connectedClientStubs;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fTIdhBtEeqjYMyamv5Nwg" name="getConnectedChatRooms" specification="_-bKPUBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fTIdxBtEeqjYMyamv5Nwg" type="_-dCeoBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub&#xD;
+		return this.connectedRooms;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_-bF94BBtEeqjYMyamv5Nwg" name="start" method="_-fRTSBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWy2BBtEeqjYMyamv5Nwg">
+                  <body>Start the model&#xD;
+	 * @param Clientname - Client name</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-bF94RBtEeqjYMyamv5Nwg" name="Clientname">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-bGk8BBtEeqjYMyamv5Nwg" name="startRMI" visibility="private" method="_-fR6UxBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ4BBtEeqjYMyamv5Nwg">
+                  <body>Starting the RMI subsystem</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-bHMABBtEeqjYMyamv5Nwg" name="quit" method="_-fR6VBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ4RBtEeqjYMyamv5Nwg">
+                  <body>Quit chatapp</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-bHMARBtEeqjYMyamv5Nwg" name="createTeam" method="_-fR6VRBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ4hBtEeqjYMyamv5Nwg">
+                  <body>Create a chat room&#xD;
+	 * @param roomName - name of the room to be created</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-bHMAhBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-bHzEBBtEeqjYMyamv5Nwg" name="shutdown" visibility="private" method="_-fShahBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ5xBtEeqjYMyamv5Nwg">
+                  <body>Shutting down the system</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-bIaIBBtEeqjYMyamv5Nwg" name="getConnectedClients" method="_-fTIdBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ6xBtEeqjYMyamv5Nwg">
+                  <body>Get the list of connected Clients&#xD;
+	 * @return - a list of IClient</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ei6ghBtEeqjYMyamv5Nwg" type="_-dCeoBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-bKPUBBtEeqjYMyamv5Nwg" name="getConnectedChatRooms" method="_-fTIdhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ7BBtEeqjYMyamv5Nwg">
+                  <body>Get the list of connected chatrooms&#xD;
+	 * @return - a list of chat rooms</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ei6gxBtEeqjYMyamv5Nwg" type="_-dCeoBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-d9rsBBtEeqjYMyamv5Nwg" name="delete" method="_-fShYBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ4xBtEeqjYMyamv5Nwg">
+                  <body>Delete the chat room from the model&#xD;
+	 * @param miniAdapter - mini adapter to be deleted</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-d9rsRBtEeqjYMyamv5Nwg" name="miniAdapter" type="_-auKcBBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-efQIBBtEeqjYMyamv5Nwg" name="ClientModel" method="_-fRTRBBtEeqjYMyamv5Nwg">
+                <eAnnotations xmi:id="_-efQIxBtEeqjYMyamv5Nwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_-efQJBBtEeqjYMyamv5Nwg" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_-fWy1xBtEeqjYMyamv5Nwg">
+                  <body>Class constructor&#xD;
+	 * @param iModel2ViewAdapter - a model to view adapter&#xD;
+	 * @param ClientUpdateAdapter - Client adapter</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-efQIRBtEeqjYMyamv5Nwg" name="iModel2ViewAdapter" type="_-aTTsBBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-efQIhBtEeqjYMyamv5Nwg" name="ClientUpdateAdapter" type="_-dHXIRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-efQJRBtEeqjYMyamv5Nwg" type="_-bDhoBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ef3MBBtEeqjYMyamv5Nwg" name="sendMsgThread" method="_-fR6UBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWy2RBtEeqjYMyamv5Nwg">
+                  <body>Send a message to an Client asynchronously&#xD;
+	 * @param receiver - the msg receiver&#xD;
+	 * @param msg - a msg to send</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ef3MRBtEeqjYMyamv5Nwg" name="receiver" type="_-dE64RBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-ef3MhBtEeqjYMyamv5Nwg" name="msg" type="_-d1v4BBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-egeQRBtEeqjYMyamv5Nwg" name="connectToDiscoveryServer" method="_-fShYhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ5BBtEeqjYMyamv5Nwg">
+                  <body>The controller would connect the IDiscoveryPanelAdapter.connectToDiscoveryServer() call to this method.&#xD;
+	 * @param category - category to connect to&#xD;
+	 * @param watchOnly - whether to watch only&#xD;
+	 * @param updateFn  - an update function</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-egeQhBtEeqjYMyamv5Nwg" name="category">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-egeQxBtEeqjYMyamv5Nwg" name="watchOnly">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-egeRBBtEeqjYMyamv5Nwg" name="updateFn" type="_-dBQgRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ehsYBBtEeqjYMyamv5Nwg" name="connectToEndPoint" method="_-fShZhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ5RBtEeqjYMyamv5Nwg">
+                  <body>The controller would connect the IDiscoveryPanelAdapter.connectToEndPoint() call to this method.&#xD;
+	 * Be sure to substitute the API's connection-level Remote interface for &quot;IConnectionEntity&quot;.&#xD;
+	 * @param endPt - an endpoint to retrieve</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ehsYRBtEeqjYMyamv5Nwg" name="endPt" type="_-dGJARBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ehsYhBtEeqjYMyamv5Nwg" name="getChatRooms" method="_-fShaBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ5hBtEeqjYMyamv5Nwg">
+                  <body>Get chat rooms&#xD;
+	 * @param user - Client to get chat rooms from</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ehsYxBtEeqjYMyamv5Nwg" name="user" type="_-dE64RBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eiTcBBtEeqjYMyamv5Nwg" name="joinRoom" method="_-fShaxBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ6BBtEeqjYMyamv5Nwg">
+                  <body>Join a room&#xD;
+	  * @param chatRoom - a room to join</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eiTcRBtEeqjYMyamv5Nwg" name="chatRoom" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eiTchBtEeqjYMyamv5Nwg" name="deleteFromChatRoom" method="_-fTIcBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ6RBtEeqjYMyamv5Nwg">
+                  <body>Delete a chat room from the list of connected rooms&#xD;
+	 * @param chatroom - a chat room to delete</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eiTcxBtEeqjYMyamv5Nwg" name="chatroom" type="_-dH-MRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ei6gBBtEeqjYMyamv5Nwg" name="connectToClient" method="_-fTIchBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fXZ6hBtEeqjYMyamv5Nwg">
+                  <body>Connect to an Client&#xD;
+	 * @param user - an Client to connect to</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ei6gRBtEeqjYMyamv5Nwg" name="user" type="_-dE64RBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_-dHXIRBtEeqjYMyamv5Nwg" name="IUserUpdateAdapter"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-dH-MRBtEeqjYMyamv5Nwg" name="Team"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-dIlQRBtEeqjYMyamv5Nwg" name="TeamWrapper"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-dJMURBtEeqjYMyamv5Nwg" name="UserWrapper"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-dfxoBBtEeqjYMyamv5Nwg" name="Player"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f2iERBtEeqjYMyamv5Nwg" name="" memberEnd="_-f2iEhBtEeqjYMyamv5Nwg _-fA0kRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f2iEhBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f2iERBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f3JIBBtEeqjYMyamv5Nwg" name="" memberEnd="_-f3JIRBtEeqjYMyamv5Nwg _-fBboBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f3JIRBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f3JIBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f3JIxBtEeqjYMyamv5Nwg" name="" memberEnd="_-f3JJBBtEeqjYMyamv5Nwg _-fCpwRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f3JJBBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f3JIxBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f3wMRBtEeqjYMyamv5Nwg" name="" memberEnd="_-f3wMhBtEeqjYMyamv5Nwg _-fD34RBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f3wMhBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f3wMRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f4XQRBtEeqjYMyamv5Nwg" name="" memberEnd="_-f4XQhBtEeqjYMyamv5Nwg _-fEe8hBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f4XQhBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f4XQRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f4XRBBtEeqjYMyamv5Nwg" name="" memberEnd="_-f4XRRBtEeqjYMyamv5Nwg _-fFtERBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f4XRRBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f4XRBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f4-URBtEeqjYMyamv5Nwg" name="" memberEnd="_-f4-UhBtEeqjYMyamv5Nwg _-fGUIxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f4-UhBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f4-URBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f5lYBBtEeqjYMyamv5Nwg" name="" memberEnd="_-f5lYRBtEeqjYMyamv5Nwg _-fG7MBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f5lYRBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f5lYBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f5lYxBtEeqjYMyamv5Nwg" name="" memberEnd="_-f5lZBBtEeqjYMyamv5Nwg _-fG7MhBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f5lZBBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f5lYxBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f6McRBtEeqjYMyamv5Nwg" name="" memberEnd="_-f6MchBtEeqjYMyamv5Nwg _-fHiQBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f6MchBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f6McRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f6MdBBtEeqjYMyamv5Nwg" name="" memberEnd="_-f6MdRBtEeqjYMyamv5Nwg _-fHiQhBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f6MdRBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f6MdBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f6zgRBtEeqjYMyamv5Nwg" name="" memberEnd="_-f6zghBtEeqjYMyamv5Nwg _-fIJUxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f6zghBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f6zgRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f7akRBtEeqjYMyamv5Nwg" name="" memberEnd="_-f7akhBtEeqjYMyamv5Nwg _-fJXcBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f7akhBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f7akRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f8BoBBtEeqjYMyamv5Nwg" name="" memberEnd="_-f8BoRBtEeqjYMyamv5Nwg _-fJXchBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f8BoRBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f8BoBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f8BoxBtEeqjYMyamv5Nwg" name="" memberEnd="_-f8BpBBtEeqjYMyamv5Nwg _-fJ-ghBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f8BpBBtEeqjYMyamv5Nwg" name="" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-f8BoxBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_-Y4XYBBtEeqjYMyamv5Nwg" name="clientView">
+            <packagedElement xmi:type="uml:Class" xmi:id="_-aXlIBBtEeqjYMyamv5Nwg" name="ClientView">
+              <ownedComment xmi:id="_-fU9pxBtEeqjYMyamv5Nwg">
+                <body>The definition of the client's view. 
+@author skylar, bill
+ *
+@param &lt;TEndPoint> The type of end point in the discovery server.</body>
+              </ownedComment>
+              <generalization xmi:id="_-eRNsBBtEeqjYMyamv5Nwg" general="_-dQhERBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-epoMBBtEeqjYMyamv5Nwg" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-epoMRBtEeqjYMyamv5Nwg" value="-4729634785879405359L"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-epoMhBtEeqjYMyamv5Nwg" name="controlPanel" visibility="private" isLeaf="true" type="_-dRvMRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fgj1BBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-epoMxBtEeqjYMyamv5Nwg" value="new JPanel()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-eqPQRBtEeqjYMyamv5Nwg" name="quitBtn" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fhK4RBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-eqPQhBtEeqjYMyamv5Nwg" value="new JButton(&quot;Quit&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-eq2UBBtEeqjYMyamv5Nwg" name="roomsPanel" visibility="private" isLeaf="true" type="_-dRvMRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fhx8RBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-eq2URBtEeqjYMyamv5Nwg" value="new JPanel()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-eq2UxBtEeqjYMyamv5Nwg" name="createChatTeamBtn" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fhx9BBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-erdYBBtEeqjYMyamv5Nwg" value="new JButton(&quot;Create Team&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-erdYhBtEeqjYMyamv5Nwg" name="roomName" visibility="private" isLeaf="true" type="_-dS9URBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fiZARBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-erdYxBtEeqjYMyamv5Nwg" value="new JTextField()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-esEcRBtEeqjYMyamv5Nwg" name="usersPanel" visibility="private" isLeaf="true" type="_-dRvMRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fjAERBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-esEchBtEeqjYMyamv5Nwg" value="new JPanel()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-esrgRBtEeqjYMyamv5Nwg" name="connectedUsers" visibility="private" isLeaf="true" type="_-dP6ARBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fjnIRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-esrgxBtEeqjYMyamv5Nwg" value="new JComboBox&lt;UserWrapper> ()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-etSkRBtEeqjYMyamv5Nwg" name="connectedChatRooms" visibility="private" isLeaf="true" type="_-dP6ARBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fkOMRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-et5oRBtEeqjYMyamv5Nwg" value="new JComboBox&lt;TeamWrapper>()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-et5oxBtEeqjYMyamv5Nwg" name="lblNewLabel" visibility="private" isLeaf="true" type="_-dRIIRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fk1QRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-et5pBBtEeqjYMyamv5Nwg" value="new JLabel(&quot;Connected Users&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-eugsRBtEeqjYMyamv5Nwg" name="lblNewLabel_1" visibility="private" isLeaf="true" type="_-dRIIRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fmDYRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-eugshBtEeqjYMyamv5Nwg" value="new JLabel(&quot;Connected Teams&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-evHwBBtEeqjYMyamv5Nwg" name="panel" visibility="private" isLeaf="true" type="_-dRvMRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fmqcRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-evHwRBtEeqjYMyamv5Nwg" value="new JPanel()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-evHwxBtEeqjYMyamv5Nwg" name="btnInvite" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fnRgRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-evu0BBtEeqjYMyamv5Nwg" value="new JButton(&quot;Invite&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-evu0hBtEeqjYMyamv5Nwg" name="tabbedPane" visibility="private" isLeaf="true" type="_-dSWQRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fn4kRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-evu0xBtEeqjYMyamv5Nwg" value="new JTabbedPane(JTabbedPane.TOP)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-ewV4BBtEeqjYMyamv5Nwg" name="iView2ModelAdapter" visibility="private" type="_-aoD0BBtEeqjYMyamv5Nwg" association="_-fn4lBBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-ewV4hBtEeqjYMyamv5Nwg" name="panel_1" visibility="private" isLeaf="true" type="_-dRvMRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fofoRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-ewV4xBtEeqjYMyamv5Nwg" value="new JPanel()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-ew88BBtEeqjYMyamv5Nwg" name="availTeamsLabel" visibility="private" isLeaf="true" type="_-dRIIRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fpGsBBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-ew88RBtEeqjYMyamv5Nwg" value="new JLabel(&quot;Available Teams&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-ew88xBtEeqjYMyamv5Nwg" name="availableRoomsDropdown" visibility="private" isLeaf="true" type="_-dP6ARBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fpGsxBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-exkARBtEeqjYMyamv5Nwg" value="new JComboBox&lt;TeamWrapper>()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-exkAxBtEeqjYMyamv5Nwg" name="joinBtn" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fptwRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-eyLEBBtEeqjYMyamv5Nwg" value="new JButton(&quot;Join&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-eyLEhBtEeqjYMyamv5Nwg" name="discoveryServerPnl" visibility="private" isLeaf="true" type="_-dRvMRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fqU0RBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-eyLExBtEeqjYMyamv5Nwg" value="new JPanel()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-eyyIBBtEeqjYMyamv5Nwg" name="discoveryServerPanelAdapter" visibility="private" type="_-dGwERBtEeqjYMyamv5Nwg" association="_-fqU1BBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-ezZMRBtEeqjYMyamv5Nwg" name="discoveryServerPanel" visibility="private" type="_-dTkYRBtEeqjYMyamv5Nwg" association="_-fq74RBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e0AQRBtEeqjYMyamv5Nwg" name="loginPane" visibility="private" isLeaf="true" type="_-dRvMRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fri8RBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e0AQhBtEeqjYMyamv5Nwg" value="new JPanel()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e0nUBBtEeqjYMyamv5Nwg" name="userNameTextField" visibility="private" isLeaf="true" type="_-dS9URBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fri9BBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e0nURBtEeqjYMyamv5Nwg" value="new JTextField()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e0nUxBtEeqjYMyamv5Nwg" name="loginBtn" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fsKARBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e0nVBBtEeqjYMyamv5Nwg" value="new JButton(&quot;Log in&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e1OYRBtEeqjYMyamv5Nwg" name="btnGetTeams" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fsxERBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e1OYhBtEeqjYMyamv5Nwg" value="new JButton(&quot;Get Teams&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e1OZBBtEeqjYMyamv5Nwg" name="availableUsers" visibility="private" isLeaf="true" type="_-dP6ARBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fsxFBBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e11cRBtEeqjYMyamv5Nwg" value="new JComboBox&lt;UserWrapper>()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e11cxBtEeqjYMyamv5Nwg" name="lblAvailableUsers" visibility="private" isLeaf="true" type="_-dRIIRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-ftYIRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e2cgBBtEeqjYMyamv5Nwg" value="new JLabel(&quot;Available Users&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e2cghBtEeqjYMyamv5Nwg" name="connectToUserBtn" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-ft_MRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e2cgxBtEeqjYMyamv5Nwg" value="new JButton(&quot;Connect &quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e3DkRBtEeqjYMyamv5Nwg" name="btnGetConectionFrom" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-ft_NBBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e3DkhBtEeqjYMyamv5Nwg" value="new JButton(&quot;Get connections from user&quot;)"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNB0xBtEeqjYMyamv5Nwg" name="ClientView" specification="_-eOKYBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fNB1BBtEeqjYMyamv5Nwg" name="iView2ModelAdapter" type="_-aoD0BBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fNB1RBtEeqjYMyamv5Nwg" name="discoveryServerPanelAdapter" type="_-dGwERBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fNB1hBtEeqjYMyamv5Nwg" type="_-aXlIBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>userNameTextField.setToolTipText(&quot;Type in a user name&quot;);
+		userNameTextField.setColumns(10);
+		this.iView2ModelAdapter = iView2ModelAdapter;
+		this.discoveryServerPanelAdapter = discoveryServerPanelAdapter;
+		discoveryServerPanel = new DiscoveryPanel&lt;TEndPoint>(this.discoveryServerPanelAdapter);
+		roomName.setToolTipText(&quot;Type in the room name in here.&quot;);
+		roomName.setColumns(10);
+		initGUI();
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNo4BBtEeqjYMyamv5Nwg" name="initGUI" specification="_-ab2kBBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>setBounds(100, 100, 1300, 727);
+		controlPanel.setBackground(Color.PINK);
+		
+		getContentPane().add(controlPanel, BorderLayout.NORTH);
+		loginPane.setToolTipText(&quot;The log-in panel.&quot;);
+		
+		controlPanel.add(loginPane);
+		loginPane.setLayout(new GridLayout(3, 0, 0, 0));
+		
+		loginPane.add(userNameTextField);
+		loginBtn.setToolTipText(&quot;Log in with your username to chat. You have to log in first!&quot;);
+		loginBtn.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				iView2ModelAdapter.login(userNameTextField.getText());
+			}
+			
+		});
+		
+		loginPane.add(loginBtn);
+		quitBtn.setToolTipText(&quot;Click this to quit and close ChatApp&quot;);
+		loginPane.add(quitBtn);
+		quitBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				iView2ModelAdapter.quit();
+			}
+		});
+		
+		usersPanel.setToolTipText(&quot;Handles user-related functionalities&quot;);
+		controlPanel.add(usersPanel);
+		usersPanel.setLayout(new GridLayout(7, 0, 0, 0));
+		lblAvailableUsers.setToolTipText(&quot;\&quot;Available Users\&quot; label&quot;);
+		
+		usersPanel.add(lblAvailableUsers);
+		availableUsers.setToolTipText(&quot;Available users to connect to.&quot;);
+		
+		usersPanel.add(availableUsers);
+		connectToUserBtn.setToolTipText(&quot;Connect with selected available user.&quot;);
+		
+		
+		connectToUserBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				iView2ModelAdapter.connectToUser(availableUsers.getItemAt(availableUsers.getSelectedIndex()).getUser());
+			}
+		});
+		
+		usersPanel.add(connectToUserBtn);
+		lblNewLabel.setToolTipText(&quot;\&quot;Connected Users\&quot; label&quot;);
+		
+		usersPanel.add(lblNewLabel);
+		connectedUsers.setToolTipText(&quot;Select a connected user here.&quot;);
+		
+		usersPanel.add(connectedUsers);
+		btnGetTeams.setToolTipText(&quot;Click to get all chatrooms that the selected user is connected to.&quot;);
+		
+		btnGetTeams.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				iView2ModelAdapter.getChatrooms(connectedUsers.getItemAt(connectedUsers.getSelectedIndex()).getUser());
+			}
+			
+		});
+		
+		usersPanel.add(btnGetTeams);
+		btnGetConectionFrom.setToolTipText(&quot;Get all user that the selected user is connected to.&quot;);
+		
+//		btnGetConectionFrom.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent e) {
+//				iView2ModelAdapter.getConnections(connectedUsers.getItemAt(connectedUsers.getSelectedIndex()).getUser());
+//			}
+//		});
+		
+		usersPanel.add(btnGetConectionFrom);
+		discoveryServerPnl.setToolTipText(&quot;Panel associated with the discovery server functionality.&quot;);
+		
+		controlPanel.add(discoveryServerPnl);
+		discoveryServerPnl.add(discoveryServerPanel);
+		roomsPanel.setToolTipText(&quot;Panel to create rooms.&quot;);
+		
+		controlPanel.add(roomsPanel);
+		roomsPanel.setLayout(new GridLayout(2, 0, 0, 0));
+		
+		roomsPanel.add(roomName);
+		createChatTeamBtn.setToolTipText(&quot;Click this to create a room with room name you typed in.&quot;);
+		createChatTeamBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				iView2ModelAdapter.createChatRoom(roomName.getText());
+			}
+		});
+		
+		roomsPanel.add(createChatTeamBtn);
+		panel.setToolTipText(&quot;Panel for room-related functionality.&quot;);
+		
+		controlPanel.add(panel);
+		panel.setLayout(new GridLayout(2, 0, 0, 0));
+		btnInvite.setToolTipText(&quot;Click here to invite a selected user to join a selected \&quot;CONNECTED\&quot; room.&quot;);
+//		btnInvite.addActionListener(new ActionListener() {
+//			public void actionPerformed(ActionEvent e) {
+//				iView2ModelAdapter.inviteToRoom(connectedUsers.getItemAt(connectedUsers.getSelectedIndex()).getUser(), (Team) connectedChatRooms.getItemAt(connectedChatRooms.getSelectedIndex()).getChatRoom());
+//			}
+//		});
+		
+		panel.add(btnInvite);
+		joinBtn.setToolTipText(&quot;Click here to join a selected \&quot;AVAILABLE\&quot; room.&quot;);
+		joinBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				iView2ModelAdapter.joinRoom(availableRoomsDropdown.getItemAt(availableRoomsDropdown.getSelectedIndex()));
+			}
+		});
+		
+		panel.add(joinBtn);
+		panel_1.setToolTipText(&quot;Room selection panel.&quot;);
+		controlPanel.add(panel_1);
+		panel_1.setLayout(new GridLayout(4, 0, 0, 0));
+		lblNewLabel_1.setToolTipText(&quot;\&quot;Connected Rooms\&quot; label.&quot;);
+		panel_1.add(lblNewLabel_1);
+		connectedChatRooms.setToolTipText(&quot;Select a connected room to invite someone&quot;);
+		panel_1.add(connectedChatRooms);
+		availableRoomsDropdown.setToolTipText(&quot;Selected an available room to join&quot;);
+		
+		availableRoomsDropdown.setMaximumSize(new Dimension(50,20));
+		
+		panel_1.add(availableRoomsDropdown);
+		availTeamsLabel.setToolTipText(&quot;\&quot;Available Rooms\&quot; label.&quot;);
+		
+		panel_1.add(availTeamsLabel);
+		
+		getContentPane().add(tabbedPane, BorderLayout.CENTER);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNo4RBtEeqjYMyamv5Nwg" name="start" specification="_-acdoBBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>this.setVisible(true);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNo4hBtEeqjYMyamv5Nwg" name="updateUsers" specification="_-ePYgRBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fNo4xBtEeqjYMyamv5Nwg" name="user" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>connectedUsers.insertItemAt(user, 0);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNo5BBtEeqjYMyamv5Nwg" name="deleteConnectedUsers" specification="_-ePYgxBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fNo5RBtEeqjYMyamv5Nwg" name="user" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>int i = 0;
+		while (true) {
+			if (connectedUsers.getItemAt(i).equals(user)) {
+				connectedUsers.remove(i);
+			}
+			i++;
+		}
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNo5hBtEeqjYMyamv5Nwg" name="updateAvailableRooms" specification="_-eP_kBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fNo5xBtEeqjYMyamv5Nwg" name="room" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>availableRoomsDropdown.insertItemAt(room, 0);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNo6BBtEeqjYMyamv5Nwg" name="installRoom" specification="_-dWnsBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fNo6RBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-fNo6hBtEeqjYMyamv5Nwg" name="miniView" type="_-a8M4BBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		tabbedPane.add(roomName, miniView);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNo6xBtEeqjYMyamv5Nwg" name="removeRoom" specification="_-dXOwBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fNo7BBtEeqjYMyamv5Nwg" name="miniView" type="_-a8M4BBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>tabbedPane.remove(miniView);;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fOP8BBtEeqjYMyamv5Nwg" name="startDiscoveryPnl" specification="_-adEsBBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>discoveryServerPanel.start();
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fOP8RBtEeqjYMyamv5Nwg" name="updateConnectedRooms" specification="_-eP_khBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fOP8hBtEeqjYMyamv5Nwg" name="chatRoomMemberWrapper" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>connectedChatRooms.insertItemAt(chatRoomMemberWrapper, 0);
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fOP8xBtEeqjYMyamv5Nwg" name="deleteFromConnectedUsers" specification="_-eQmoBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fOP9BBtEeqjYMyamv5Nwg" name="userWrapper" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>int i = 0;
+		while (i &lt;= connectedUsers.getItemCount() - 1) {
+			if (connectedUsers.getItemAt(i).getUser().equals(userWrapper.getUser())) {
+				break;
+			}
+			i += 1;
+		}
+			connectedUsers.removeItemAt(i);	
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fOP9RBtEeqjYMyamv5Nwg" name="updateAvailableUser" specification="_-eQmohBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fOP9hBtEeqjYMyamv5Nwg" name="userWrapper" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>// TODO Auto-generated method stub
+		this.availableUsers.insertItemAt(userWrapper, 0);
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_-ab2kBBtEeqjYMyamv5Nwg" name="initGUI" visibility="private" method="_-fNo4BBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fU9qRBtEeqjYMyamv5Nwg">
+                  <body>Initialize the GUI</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-acdoBBtEeqjYMyamv5Nwg" name="start" method="_-fNo4RBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fU9qhBtEeqjYMyamv5Nwg">
+                  <body>Start the view</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-adEsBBtEeqjYMyamv5Nwg" name="startDiscoveryPnl" method="_-fOP8BBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fVksBBtEeqjYMyamv5Nwg">
+                  <body>Start the discovery panel</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-dWnsBBtEeqjYMyamv5Nwg" name="installRoom" method="_-fNo6BBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fU9rhBtEeqjYMyamv5Nwg">
+                  <body>Install a room to the tabbed panel
+	 * @param roomName - name of the room
+	 * @param miniView - the GUI of the mini mvc</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-dWnsRBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-dWnshBtEeqjYMyamv5Nwg" name="miniView" type="_-a8M4BBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-dXOwBBtEeqjYMyamv5Nwg" name="removeRoom" method="_-fNo6xBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fU9rxBtEeqjYMyamv5Nwg">
+                  <body>Remove a room from the tabbed panel
+	 * @param miniView - the view of the room to remove</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-dXOwRBtEeqjYMyamv5Nwg" name="miniView" type="_-a8M4BBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eOKYBBtEeqjYMyamv5Nwg" name="ClientView" method="_-fNB0xBtEeqjYMyamv5Nwg">
+                <eAnnotations xmi:id="_-eOxchBtEeqjYMyamv5Nwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_-eOxcxBtEeqjYMyamv5Nwg" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_-fU9qBBtEeqjYMyamv5Nwg">
+                  <body>Constructor for the view
+	 * @param iView2ModelAdapter - a view to model adapter
+	 * @param discoveryServerPanelAdapter - adapter for discovery panel</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eOxcBBtEeqjYMyamv5Nwg" name="iView2ModelAdapter" type="_-aoD0BBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eOxcRBtEeqjYMyamv5Nwg" name="discoveryServerPanelAdapter" type="_-dGwERBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eOxdBBtEeqjYMyamv5Nwg" type="_-aXlIBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ePYgRBtEeqjYMyamv5Nwg" name="updateUsers" method="_-fNo4hBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fU9qxBtEeqjYMyamv5Nwg">
+                  <body>Add an user to the connected users dropdown
+	 * @param user - an user to add to the drop down</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ePYghBtEeqjYMyamv5Nwg" name="user" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ePYgxBtEeqjYMyamv5Nwg" name="deleteConnectedUsers" method="_-fNo5BBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fU9rBBtEeqjYMyamv5Nwg">
+                  <body>Delete an user from the drop down
+	 * @param user - an user to delete from the dropdown</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ePYhBBtEeqjYMyamv5Nwg" name="user" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eP_kBBtEeqjYMyamv5Nwg" name="updateAvailableRooms" method="_-fNo5hBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fU9rRBtEeqjYMyamv5Nwg">
+                  <body>Update the dropdown of available rooms
+	 * @param room - room to add to the dropdown</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eP_kRBtEeqjYMyamv5Nwg" name="room" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eP_khBtEeqjYMyamv5Nwg" name="updateConnectedRooms" method="_-fOP8RBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fVksRBtEeqjYMyamv5Nwg">
+                  <body>Update the list of connected chat rooms
+	 * @param chatRoomMemberWrapper - a room to add to the list</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eP_kxBtEeqjYMyamv5Nwg" name="chatRoomMemberWrapper" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eQmoBBtEeqjYMyamv5Nwg" name="deleteFromConnectedUsers" method="_-fOP8xBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fVkshBtEeqjYMyamv5Nwg">
+                  <body>Delete an user from the list of connected users
+	 * @param userWrapper - an user to delete from the dropdown</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eQmoRBtEeqjYMyamv5Nwg" name="userWrapper" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eQmohBtEeqjYMyamv5Nwg" name="updateAvailableUser" method="_-fOP9RBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fVksxBtEeqjYMyamv5Nwg">
+                  <body>Update the drop down of available users that you can connect to
+	 * @param userWrapper - an user to add to the available user dropdown</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eQmoxBtEeqjYMyamv5Nwg" name="userWrapper" type="_-dJMURBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_-aoD0BBtEeqjYMyamv5Nwg" name="IView2ModelAdapter">
+              <ownedComment xmi:id="_-fVktBBtEeqjYMyamv5Nwg">
+                <body>View to model adapter&#xD;
+@author minhvtm99&#xD;
+ *</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_-ap5ABBtEeqjYMyamv5Nwg" name="connectedWrappedUsers" type="_-dCeoBBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-feHkBBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-aruMBBtEeqjYMyamv5Nwg" name="connectedChatRooms" type="_-dCeoBBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-feuoRBtEeqjYMyamv5Nwg"/>
+              <ownedOperation xmi:id="_-aoq4BBtEeqjYMyamv5Nwg" name="quit">
+                <ownedComment xmi:id="_-fVktRBtEeqjYMyamv5Nwg">
+                  <body>Quit chatapp</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-aoq4RBtEeqjYMyamv5Nwg" name="createChatRoom">
+                <ownedComment xmi:id="_-fVkthBtEeqjYMyamv5Nwg">
+                  <body>Create a chatroom &#xD;
+	 * @param roomName - name of chatroom</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-apR8BBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-apR8RBtEeqjYMyamv5Nwg" name="login">
+                <ownedComment xmi:id="_-fVkuBBtEeqjYMyamv5Nwg">
+                  <body>Login to chat app&#xD;
+	 * @param string - user name</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-apR8hBtEeqjYMyamv5Nwg" name="string">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eURABBtEeqjYMyamv5Nwg" name="joinRoom">
+                <ownedComment xmi:id="_-fVktxBtEeqjYMyamv5Nwg">
+                  <body>Join a room&#xD;
+	 * @param itemAt - a room to join</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eURARBtEeqjYMyamv5Nwg" name="itemAt" type="_-dIlQRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eU4EBBtEeqjYMyamv5Nwg" name="inviteToRoom">
+                <ownedComment xmi:id="_-fVkuRBtEeqjYMyamv5Nwg">
+                  <body>Invite an user to a room&#xD;
+	 * @param user - an user to invite&#xD;
+	 * @param chatRoom - a room to invite the user</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eU4ERBtEeqjYMyamv5Nwg" name="user" type="_-dET0RBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eU4EhBtEeqjYMyamv5Nwg" name="chatRoom" type="_-dH-MRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eVfIBBtEeqjYMyamv5Nwg" name="getChatrooms">
+                <ownedComment xmi:id="_-fVkuhBtEeqjYMyamv5Nwg">
+                  <body>Get the chat rooms from an user&#xD;
+	 * @param iConnection - an user to get chatrooms from</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eVfIRBtEeqjYMyamv5Nwg" name="iConnection" type="_-dE64RBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eVfIhBtEeqjYMyamv5Nwg" name="connectToUser">
+                <ownedComment xmi:id="_-fVkuxBtEeqjYMyamv5Nwg">
+                  <body>Connect to an user&#xD;
+	 * @param iConnection - an user to connect to</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eVfIxBtEeqjYMyamv5Nwg" name="iConnection" type="_-dE64RBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eWGMBBtEeqjYMyamv5Nwg" name="getConnections">
+                <ownedComment xmi:id="_-fVkvBBtEeqjYMyamv5Nwg">
+                  <body>Get an user's other connections&#xD;
+	 * @param user - an user to get connections from</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eWGMRBtEeqjYMyamv5Nwg" name="user" type="_-dET0RBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-feHkBBtEeqjYMyamv5Nwg" name="" memberEnd="_-feHkRBtEeqjYMyamv5Nwg _-ap5ABBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-feHkRBtEeqjYMyamv5Nwg" name="" type="_-aoD0BBtEeqjYMyamv5Nwg" association="_-feHkBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-feuoRBtEeqjYMyamv5Nwg" name="" memberEnd="_-feuohBtEeqjYMyamv5Nwg _-aruMBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-feuohBtEeqjYMyamv5Nwg" name="" type="_-aoD0BBtEeqjYMyamv5Nwg" association="_-feuoRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fgj1BBtEeqjYMyamv5Nwg" name="" memberEnd="_-fgj1RBtEeqjYMyamv5Nwg _-epoMhBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fgj1RBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fgj1BBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fhK4RBtEeqjYMyamv5Nwg" name="" memberEnd="_-fhK4hBtEeqjYMyamv5Nwg _-eqPQRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fhK4hBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fhK4RBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fhx8RBtEeqjYMyamv5Nwg" name="" memberEnd="_-fhx8hBtEeqjYMyamv5Nwg _-eq2UBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fhx8hBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fhx8RBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fhx9BBtEeqjYMyamv5Nwg" name="" memberEnd="_-fhx9RBtEeqjYMyamv5Nwg _-eq2UxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fhx9RBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fhx9BBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fiZARBtEeqjYMyamv5Nwg" name="" memberEnd="_-fiZAhBtEeqjYMyamv5Nwg _-erdYhBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fiZAhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fiZARBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fjAERBtEeqjYMyamv5Nwg" name="" memberEnd="_-fjAEhBtEeqjYMyamv5Nwg _-esEcRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fjAEhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fjAERBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fjnIRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fjnIhBtEeqjYMyamv5Nwg _-esrgRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fjnIhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fjnIRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fkOMRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fkOMhBtEeqjYMyamv5Nwg _-etSkRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fkOMhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fkOMRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fk1QRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fk1QhBtEeqjYMyamv5Nwg _-et5oxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fk1QhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fk1QRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fmDYRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fmDYhBtEeqjYMyamv5Nwg _-eugsRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fmDYhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fmDYRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fmqcRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fmqchBtEeqjYMyamv5Nwg _-evHwBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fmqchBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fmqcRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fnRgRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fnRghBtEeqjYMyamv5Nwg _-evHwxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fnRghBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fnRgRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fn4kRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fn4khBtEeqjYMyamv5Nwg _-evu0hBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fn4khBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fn4kRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fn4lBBtEeqjYMyamv5Nwg" name="" memberEnd="_-fn4lRBtEeqjYMyamv5Nwg _-ewV4BBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fn4lRBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fn4lBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fofoRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fofohBtEeqjYMyamv5Nwg _-ewV4hBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fofohBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fofoRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fpGsBBtEeqjYMyamv5Nwg" name="" memberEnd="_-fpGsRBtEeqjYMyamv5Nwg _-ew88BBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fpGsRBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fpGsBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fpGsxBtEeqjYMyamv5Nwg" name="" memberEnd="_-fpGtBBtEeqjYMyamv5Nwg _-ew88xBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fpGtBBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fpGsxBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fptwRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fptwhBtEeqjYMyamv5Nwg _-exkAxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fptwhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fptwRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fqU0RBtEeqjYMyamv5Nwg" name="" memberEnd="_-fqU0hBtEeqjYMyamv5Nwg _-eyLEhBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fqU0hBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fqU0RBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fqU1BBtEeqjYMyamv5Nwg" name="" memberEnd="_-fqU1RBtEeqjYMyamv5Nwg _-eyyIBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fqU1RBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fqU1BBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fq74RBtEeqjYMyamv5Nwg" name="" memberEnd="_-fq74hBtEeqjYMyamv5Nwg _-ezZMRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fq74hBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fq74RBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fri8RBtEeqjYMyamv5Nwg" name="" memberEnd="_-fri8hBtEeqjYMyamv5Nwg _-e0AQRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fri8hBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fri8RBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fri9BBtEeqjYMyamv5Nwg" name="" memberEnd="_-fri9RBtEeqjYMyamv5Nwg _-e0nUBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fri9RBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fri9BBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fsKARBtEeqjYMyamv5Nwg" name="" memberEnd="_-fsKAhBtEeqjYMyamv5Nwg _-e0nUxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fsKAhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fsKARBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fsxERBtEeqjYMyamv5Nwg" name="" memberEnd="_-fsxEhBtEeqjYMyamv5Nwg _-e1OYRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fsxEhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fsxERBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fsxFBBtEeqjYMyamv5Nwg" name="" memberEnd="_-fsxFRBtEeqjYMyamv5Nwg _-e1OZBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fsxFRBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fsxFBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-ftYIRBtEeqjYMyamv5Nwg" name="" memberEnd="_-ftYIhBtEeqjYMyamv5Nwg _-e11cxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-ftYIhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-ftYIRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-ft_MRBtEeqjYMyamv5Nwg" name="" memberEnd="_-ft_MhBtEeqjYMyamv5Nwg _-e2cghBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-ft_MhBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-ft_MRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-ft_NBBtEeqjYMyamv5Nwg" name="" memberEnd="_-ft_NRBtEeqjYMyamv5Nwg _-e3DkRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-ft_NRBtEeqjYMyamv5Nwg" name="" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-ft_NBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_-ZATMBBtEeqjYMyamv5Nwg" name="clientController">
+            <packagedElement xmi:type="uml:Class" xmi:id="_-aHtgBBtEeqjYMyamv5Nwg" name="ClientController">
+              <ownedComment xmi:id="_-fTvgBBtEeqjYMyamv5Nwg">
+                <body>Controller of game application for the client.&#xD;
+@author skylar&#xD;
+ *</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_-enL8BBtEeqjYMyamv5Nwg" name="model" visibility="private" type="_-bDhoBBtEeqjYMyamv5Nwg" association="_-ff8wRBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-enzABBtEeqjYMyamv5Nwg" name="view" visibility="private" type="_-aXlIBBtEeqjYMyamv5Nwg" association="_-fgj0RBtEeqjYMyamv5Nwg"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fMawBBtEeqjYMyamv5Nwg" name="ClientController" specification="_-aKw0BBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fMawRBtEeqjYMyamv5Nwg" type="_-aHtgBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>model = new ClientModel(new IModel2ViewAdapter() {&#xD;
+		&#xD;
+			@Override&#xD;
+			public IMainAccessMiniAdapter addRoom(UUID roomID, String roomName, String userName, Collection&lt;IPlayer> currentMembers) {&#xD;
+				&#xD;
+				ClientMiniController mc = new ClientMiniController(roomID, roomName, userName, currentMembers);&#xD;
+				ClientMiniView miniView = mc.getMiniView();&#xD;
+				&#xD;
+				mc.setMiniAccessMainAdapter(new IMiniAccessMainAdapter() {&#xD;
+					@Override&#xD;
+					public void leave() {&#xD;
+						view.removeRoom(mc.getMiniView());  &#xD;
+						model.delete(mc.getMiniAdapter());&#xD;
+						&#xD;
+						model.deleteFromChatRoom(mc.getMiniAdapter().getChatRoom());&#xD;
+//						view.updateExistingRooms();&#xD;
+					}&#xD;
+					&#xD;
+				});&#xD;
+				mc.start();&#xD;
+				&#xD;
+				view.installRoom(roomName, miniView);&#xD;
+				return mc.getMiniAdapter();&#xD;
+&#xD;
+				&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void startDiscoveryPanel() {&#xD;
+				view.startDiscoveryPnl();&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void updateConnectedUser(UserWrapper newConnection) {&#xD;
+				view.updateUsers(newConnection);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void updateAvailRooms(TeamWrapper availRoom) {&#xD;
+				view.updateAvailableRooms(availRoom);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void updateConnectedRooms(TeamWrapper TeamWrapper) {&#xD;
+				view.updateConnectedRooms(TeamWrapper);&#xD;
+&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void deleteFromConnectedChatRoom(TeamWrapper TeamWrapper) {&#xD;
+//				view.updateExistingRooms();&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void deleteFromConnectedUsers(UserWrapper userWrapper) {&#xD;
+//				view.updateExistingUsers();&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void updateAvailableUser(UserWrapper userWrapper) {&#xD;
+				// TODO Auto-generated method stub&#xD;
+				view.updateAvailableUser(userWrapper);&#xD;
+			}&#xD;
+&#xD;
+		}, new IUserUpdateAdapter() {&#xD;
+&#xD;
+			@Override&#xD;
+			public void deleteConnectedUsers(UserWrapper user) {&#xD;
+				// TODO Auto-generated method stub&#xD;
+				view.deleteFromConnectedUsers(user);&#xD;
+			}&#xD;
+			&#xD;
+		});&#xD;
+&#xD;
+		&#xD;
+		view = new ClientView&lt;IEndPointData>(new IView2ModelAdapter() {&#xD;
+			&#xD;
+			@Override&#xD;
+			public void quit() {&#xD;
+				model.quit();&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void createChatRoom(String roomName) {&#xD;
+				model.createTeam(roomName);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void joinRoom(TeamWrapper itemAt) {&#xD;
+				model.joinRoom(itemAt);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void login(String username) {&#xD;
+				model.start(username);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void inviteToRoom(IClient user, Team chatRoom) {&#xD;
+//				model.inviteToRoom(user, chatRoom);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void getChatrooms(IConnection user) {&#xD;
+				// TODO Auto-generated method stub&#xD;
+				model.getChatRooms(user);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void connectToUser(IConnection user) {&#xD;
+				model.connectToClient(user);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void getConnections(IClient user) {&#xD;
+//				model.getUsersFromUser(user);&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public ArrayList&lt;UserWrapper> getConnectedWrappedUsers() {&#xD;
+//				ArrayList&lt;IClient> users = model.getConnectedUsers();&#xD;
+//				ArrayList&lt;UserWrapper> wrappedUsers = new ArrayList&lt;UserWrapper>();&#xD;
+//				for (IClient user : users) {&#xD;
+//					wrappedUsers.add(new UserWrapper(user, model.getUserUpdateAdapter()));&#xD;
+//				}&#xD;
+//				return wrappedUsers;&#xD;
+				return null;&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public ArrayList&lt;TeamWrapper> getConnectedChatRooms() {&#xD;
+//				ArrayList&lt;Team> chatrooms = model.getConnectedChatRooms();&#xD;
+//				ArrayList&lt;TeamWrapper> wrappedRooms = new ArrayList&lt;TeamWrapper>();&#xD;
+//				for (Team room : chatrooms) {&#xD;
+//					wrappedRooms.add(new TeamWrapper(room, model.getUser()));&#xD;
+//				}&#xD;
+//				return wrappedRooms;&#xD;
+				return null;&#xD;
+			}&#xD;
+		}, new IDiscoveryPanelAdapter&lt;IEndPointData>() {&#xD;
+&#xD;
+			@Override&#xD;
+			public void connectToDiscoveryServer(String category, boolean watchOnly, Consumer&lt;Iterable&lt;IEndPointData>> endPtsUpdateFn) {&#xD;
+				// TODO Auto-generated method stub&#xD;
+				model.connectToDiscoveryServer(category, watchOnly, endPtsUpdateFn);&#xD;
+				&#xD;
+			}&#xD;
+&#xD;
+			@Override&#xD;
+			public void connectToEndPoint(IEndPointData selectedValue) {&#xD;
+				model.connectToEndPoint((IEndPointData) selectedValue);&#xD;
+			}&#xD;
+			&#xD;
+		});&#xD;
+&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fMawhBtEeqjYMyamv5Nwg" name="start" specification="_-aMmABBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>view.start();&#xD;
+//		model.start();&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fNB0BBtEeqjYMyamv5Nwg" name="main" specification="_-aNNEBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fNB0RBtEeqjYMyamv5Nwg" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-fNB0hBtEeqjYMyamv5Nwg" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>EventQueue.invokeLater(() -> {&#xD;
+			try {&#xD;
+				(new ClientController()).start();&#xD;
+			} catch (Exception e) {&#xD;
+				e.printStackTrace();&#xD;
+			}&#xD;
+		});&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_-aKw0BBtEeqjYMyamv5Nwg" name="ClientController" method="_-fMawBBtEeqjYMyamv5Nwg">
+                <eAnnotations xmi:id="_-aLX4BBtEeqjYMyamv5Nwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_-aLX4RBtEeqjYMyamv5Nwg" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_-fUWkRBtEeqjYMyamv5Nwg">
+                  <body>Constructs a new {@code Controller} object.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-aLX4hBtEeqjYMyamv5Nwg" type="_-aHtgBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-aMmABBtEeqjYMyamv5Nwg" name="start" method="_-fMawhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fUWkhBtEeqjYMyamv5Nwg">
+                  <body>Starts both the view and the model associated with the controller.</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-aNNEBBtEeqjYMyamv5Nwg" name="main" isStatic="true" method="_-fNB0BBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fUWkxBtEeqjYMyamv5Nwg">
+                  <body>Starts the program by starting the controller.&#xD;
+	 * &#xD;
+	 * @param args - the command line input</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-aNNERBtEeqjYMyamv5Nwg" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-aNNEhBtEeqjYMyamv5Nwg" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_-aPCQBBtEeqjYMyamv5Nwg" name="IMiniAccessMainAdapter">
+              <ownedComment xmi:id="_-fUWlBBtEeqjYMyamv5Nwg">
+                <body>Definition of the adapter for the mini to access main MVC methods.&#xD;
+@author skylar, minh&#xD;
+ *</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_-aPpUBBtEeqjYMyamv5Nwg" name="leave">
+                <ownedComment xmi:id="_-fUWlRBtEeqjYMyamv5Nwg">
+                  <body>Method for processing leaving the chat room.</body>
+                </ownedComment>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-ff8wRBtEeqjYMyamv5Nwg" name="" memberEnd="_-ff8whBtEeqjYMyamv5Nwg _-enL8BBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-ff8whBtEeqjYMyamv5Nwg" name="" type="_-aHtgBBtEeqjYMyamv5Nwg" association="_-ff8wRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fgj0RBtEeqjYMyamv5Nwg" name="" memberEnd="_-fgj0hBtEeqjYMyamv5Nwg _-enzABBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fgj0hBtEeqjYMyamv5Nwg" name="" type="_-aHtgBBtEeqjYMyamv5Nwg" association="_-fgj0RBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-Y4XYRBtEeqjYMyamv5Nwg" name="clientMiniMVC">
+          <packagedElement xmi:type="uml:Package" xmi:id="_-Y4XYhBtEeqjYMyamv5Nwg" name="clientMiniController">
+            <packagedElement xmi:type="uml:Class" xmi:id="_-av_oBBtEeqjYMyamv5Nwg" name="ClientMiniController">
+              <ownedComment xmi:id="_-fVkwBBtEeqjYMyamv5Nwg">
+                <body>The definition of the controller
+@author skylar, bill
+ *</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_-e3qoBBtEeqjYMyamv5Nwg" name="model" visibility="private" type="_-a0REBBtEeqjYMyamv5Nwg" association="_-fumQRBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e4RsRBtEeqjYMyamv5Nwg" name="view" visibility="private" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-fumRBBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e44wBBtEeqjYMyamv5Nwg" name="_mainAccessMiniAdapter" visibility="private" type="_-auKcBBtEeqjYMyamv5Nwg" association="_-fvNUhBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e44whBtEeqjYMyamv5Nwg" name="_miniAccessMainAdapter" visibility="private" type="_-aPCQBBtEeqjYMyamv5Nwg" association="_-fv0YRBtEeqjYMyamv5Nwg"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fO3ABBtEeqjYMyamv5Nwg" name="setMiniAccessMainAdapter" specification="_-diN4BBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fO3ARBtEeqjYMyamv5Nwg" name="adapter" type="_-aPCQBBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>this._miniAccessMainAdapter = adapter;
+
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fO3AhBtEeqjYMyamv5Nwg" name="ClientMiniController" specification="_-eWtQBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fO3AxBtEeqjYMyamv5Nwg" name="roomID" type="_-dDswRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fO3BBBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-fO3BRBtEeqjYMyamv5Nwg" name="userName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-fO3BhBtEeqjYMyamv5Nwg" name="currentMembers" type="_-dDFsRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fO3BxBtEeqjYMyamv5Nwg" type="_-av_oBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>model = new ClientMiniModel(roomID, roomName, userName, currentMembers, new IMiniModel2ViewAdapter() {
+
+			@Override
+			public void displayMessage(String message) {
+				// TODO Auto-generated method stub
+				view.displayMessage(message);
+			}
+
+			@Override
+			public void displayComponent(JComponent component) {
+				// TODO Auto-generated method stub
+				System.out.println(&quot;Displaying component in model2view adapter&quot;);
+
+				view.displayComponent(component);
+			}
+			
+		});
+		
+		view = new ClientMiniView(new IClientMiniViewUpdateAdapter&lt;IPlayerMsg>() {
+
+			@Override
+			public void leave() {
+				model.leave();
+				_miniAccessMainAdapter.leave();
+			}
+
+			@Override
+			public void sendMessageClicked(IPlayerMsg message) {
+				// TODO Auto-generated method stub
+				model.sendMessage(message);
+			}
+
+			@Override
+			public void sendTextMsg(String text) {
+				// TODO Auto-generated method stub
+				model.sendTextMsg(text);
+			}
+
+			@Override
+			public void sendImageMsg(String imgName) {
+				model.sendImageMsg(imgName);
+			}
+		});
+		
+		
+		this._mainAccessMiniAdapter = new IMainAccessMiniAdapter() {
+		
+			@Override
+			public Team getChatRoom() {
+				// TODO Auto-generated method stub
+				return model.getTeam();
+			}
+		
+			@Override
+			public Player getChatUser() {
+				// TODO Auto-generated method stub
+				return model.getUser();
+			}
+
+			@Override
+			public void joinRoom() {
+				model.joinRoom();
+			}
+
+		};
+
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fO3CBBtEeqjYMyamv5Nwg" name="getMiniAdapter" specification="_-axNwBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fO3CRBtEeqjYMyamv5Nwg" type="_-auKcBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>return this._mainAccessMiniAdapter;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fPeEBBtEeqjYMyamv5Nwg" name="getMiniView" specification="_-ax00BBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fPeERBtEeqjYMyamv5Nwg" type="_-a8M4BBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>return this.view;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fPeEhBtEeqjYMyamv5Nwg" name="start" specification="_-ax00RBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>view.start();
+		model.start();
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_-axNwBBtEeqjYMyamv5Nwg" name="getMiniAdapter" method="_-fO3CBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLwRBtEeqjYMyamv5Nwg">
+                  <body>Getter method for the mainAccessMiniAdapter
+	 * @return the adapter for the main to access mini</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-diN4hBtEeqjYMyamv5Nwg" type="_-auKcBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ax00BBtEeqjYMyamv5Nwg" name="getMiniView" method="_-fPeEBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLwhBtEeqjYMyamv5Nwg">
+                  <body>Getter method for the mini view
+	 * @return the mini view of this chat room</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-di08BBtEeqjYMyamv5Nwg" type="_-a8M4BBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ax00RBtEeqjYMyamv5Nwg" name="start" method="_-fPeEhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLwxBtEeqjYMyamv5Nwg">
+                  <body>Start the mini MVC representing a single chat room</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-diN4BBtEeqjYMyamv5Nwg" name="setMiniAccessMainAdapter" method="_-fO3ABBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fVkwRBtEeqjYMyamv5Nwg">
+                  <body>The setter for miniAccessMainAdapter
+	 * @param adapter The new miniAccessMainAdapter</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-diN4RBtEeqjYMyamv5Nwg" name="adapter" type="_-aPCQBBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eWtQBBtEeqjYMyamv5Nwg" name="ClientMiniController" method="_-fO3AhBtEeqjYMyamv5Nwg">
+                <eAnnotations xmi:id="_-eXUUBBtEeqjYMyamv5Nwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_-eXUURBtEeqjYMyamv5Nwg" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_-fWLwBBtEeqjYMyamv5Nwg">
+                  <body>The constructor for the mini controller
+	 * @param roomID the room ID
+	 * @param roomName the room name
+	 * @param userName the user who's view this chatApp
+	 * @param currentMembers all current members in the this chat room</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eWtQRBtEeqjYMyamv5Nwg" name="roomID" type="_-dDswRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eWtQhBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-eWtQxBtEeqjYMyamv5Nwg" name="userName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-eWtRBBtEeqjYMyamv5Nwg" name="currentMembers" type="_-dDFsRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eXUUhBtEeqjYMyamv5Nwg" type="_-av_oBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fumQRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fumQhBtEeqjYMyamv5Nwg _-e3qoBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fumQhBtEeqjYMyamv5Nwg" name="" type="_-av_oBBtEeqjYMyamv5Nwg" association="_-fumQRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fumRBBtEeqjYMyamv5Nwg" name="" memberEnd="_-fvNUBBtEeqjYMyamv5Nwg _-e4RsRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fvNUBBtEeqjYMyamv5Nwg" name="" type="_-av_oBBtEeqjYMyamv5Nwg" association="_-fumRBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fvNUhBtEeqjYMyamv5Nwg" name="" memberEnd="_-fvNUxBtEeqjYMyamv5Nwg _-e44wBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fvNUxBtEeqjYMyamv5Nwg" name="" type="_-av_oBBtEeqjYMyamv5Nwg" association="_-fvNUhBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fv0YRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fv0YhBtEeqjYMyamv5Nwg _-e44whBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fv0YhBtEeqjYMyamv5Nwg" name="" type="_-av_oBBtEeqjYMyamv5Nwg" association="_-fv0YRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_-Y4-cBBtEeqjYMyamv5Nwg" name="clientMiniView">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_-aPpURBtEeqjYMyamv5Nwg" name="IClientMiniViewUpdateAdapter">
+              <ownedComment xmi:id="_-fUWlhBtEeqjYMyamv5Nwg">
+                <body>Adapter for the mini view to update its information.
+@author skylar, minh
+ *
+@param &lt;TMessage> The generic type of message sent from the view.</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_-aQ3cBBtEeqjYMyamv5Nwg" name="leave">
+                <ownedComment xmi:id="_-fUWlxBtEeqjYMyamv5Nwg">
+                  <body>The method for the mini to quit.</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-aQ3cRBtEeqjYMyamv5Nwg" name="sendTextMsg">
+                <ownedComment xmi:id="_-fUWmRBtEeqjYMyamv5Nwg">
+                  <body>Method for sending strings typed in the view.
+	 * @param text the string message.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-aQ3chBtEeqjYMyamv5Nwg" name="text">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-aSFkBBtEeqjYMyamv5Nwg" name="sendImageMsg">
+                <ownedComment xmi:id="_-fUWmhBtEeqjYMyamv5Nwg">
+                  <body>Method for sending an image from the view.
+	 * @param text the image file name.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-aSFkRBtEeqjYMyamv5Nwg" name="text">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eIq0hBtEeqjYMyamv5Nwg" name="sendMessageClicked">
+                <ownedComment xmi:id="_-fUWmBBtEeqjYMyamv5Nwg">
+                  <body>Intermediate method for sending abstract messages from the view.
+	 * @param message the message to be send.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eIq0xBtEeqjYMyamv5Nwg" name="message" type="_-eIq0BBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-a8M4BBtEeqjYMyamv5Nwg" name="ClientMiniView">
+              <ownedComment xmi:id="_-fWLzhBtEeqjYMyamv5Nwg">
+                <body>Definition and implementation of the mini view displaying the chat room content.
+@author skylar, minh
+ *</body>
+              </ownedComment>
+              <generalization xmi:id="_-ecz4xBtEeqjYMyamv5Nwg" general="_-dRvMRBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e7VABBtEeqjYMyamv5Nwg" name="serialVersionUID" visibility="private" isLeaf="true" isStatic="true" isReadOnly="true">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e7VARBtEeqjYMyamv5Nwg" value="-2523539088903133804L"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e78EBBtEeqjYMyamv5Nwg" name="chatRoomLabel" visibility="private" isLeaf="true" type="_-dRIIRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fyQoBBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e78ERBtEeqjYMyamv5Nwg" value="new JLabel(&quot;       &quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e78ExBtEeqjYMyamv5Nwg" name="textArea" visibility="private" isLeaf="true" type="_-drX0BBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fyQoxBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e78FBBtEeqjYMyamv5Nwg" value="new JTextArea()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e8jIRBtEeqjYMyamv5Nwg" name="textField" visibility="private" isLeaf="true" type="_-dS9URBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fy3sRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e8jIhBtEeqjYMyamv5Nwg" value="new JTextField()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e9KMRBtEeqjYMyamv5Nwg" name="btnSendmessgebutton" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-fzewRBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e9KMhBtEeqjYMyamv5Nwg" value="new JButton(&quot;Send&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e9xQBBtEeqjYMyamv5Nwg" name="splitPane_1" visibility="private" isLeaf="true" type="_-dtNABBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-f0F0RBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e9xQRBtEeqjYMyamv5Nwg" value="new JSplitPane()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e-YUBBtEeqjYMyamv5Nwg" name="leaveButton" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-f0s4BBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e-YURBtEeqjYMyamv5Nwg" value="new JButton(&quot;Leave&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e-YUxBtEeqjYMyamv5Nwg" name="scrollPane" visibility="private" isLeaf="true" type="_-dt0EBBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-f0s4xBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-e-_YBBtEeqjYMyamv5Nwg" value="new ScrollPane()"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-e-_YhBtEeqjYMyamv5Nwg" name="_miniViewAdapter" visibility="private" type="_-aPpURBtEeqjYMyamv5Nwg" association="_-f1T8RBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e_mchBtEeqjYMyamv5Nwg" name="sendImageButton" visibility="private" isLeaf="true" type="_-dPS8RBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-f1T9BBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-fANgBBtEeqjYMyamv5Nwg" value="new JButton(&quot;Send Image&quot;)"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_-fANghBtEeqjYMyamv5Nwg" name="panel" visibility="private" isLeaf="true" type="_-dRvMRBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-f17ARBtEeqjYMyamv5Nwg">
+                <defaultValue xmi:type="uml:LiteralString" xmi:id="_-fANgxBtEeqjYMyamv5Nwg" value="new JPanel()"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQsMhBtEeqjYMyamv5Nwg" name="ClientMiniView" specification="_-dubIBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fQsMxBtEeqjYMyamv5Nwg" name="miniViewAdapter" type="_-aPpURBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fQsNBBtEeqjYMyamv5Nwg" type="_-a8M4BBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>textField.setToolTipText(&quot;Enter your messages here.&quot;);
+		textField.setColumns(20);
+		this._miniViewAdapter = miniViewAdapter;
+		initGUI();
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQsNRBtEeqjYMyamv5Nwg" name="initGUI" specification="_-a-CEBBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>setToolTipText(&quot;Panel for displaying content of a single chat room.&quot;);
+		setLayout(new BorderLayout(0, 0));
+		splitPane_1.setToolTipText(&quot;Displaying header components.&quot;);
+		add(splitPane_1, BorderLayout.PAGE_START);
+		leaveButton.setToolTipText(&quot;Click here to leave the chat room.&quot;);
+		leaveButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				_miniViewAdapter.leave();
+			}
+		});
+		
+		splitPane_1.setLeftComponent(leaveButton);
+		splitPane_1.setRightComponent(chatRoomLabel);
+		chatRoomLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		chatRoomLabel.setForeground(Color.GRAY);
+		btnSendmessgebutton.setToolTipText(&quot;Click here to send text messages in the text field.&quot;);
+		
+		this.btnSendmessgebutton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				_miniViewAdapter.sendTextMsg(textField.getText());
+				
+			}	
+		});
+		sendImageButton.setToolTipText(&quot;Click here to send the image whose file name is in typed in the text field.&quot;);
+		
+		this.sendImageButton.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				_miniViewAdapter.sendImageMsg(textField.getText());
+			}
+			
+		});
+		add(scrollPane, BorderLayout.CENTER);
+		textArea.setToolTipText(&quot;Text messages displayed here.&quot;);
+		
+		scrollPane.add(textArea);
+		panel.setToolTipText(&quot;Panel for command-related functionality.&quot;);
+		panel.setLayout(new GridLayout(1, 3, 0, 0));
+
+		panel.add(textField);
+		panel.add(btnSendmessgebutton);
+		panel.add(sendImageButton);
+		add(panel, BorderLayout.PAGE_END);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQsNhBtEeqjYMyamv5Nwg" name="start" specification="_-a-CERBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>this.setVisible(true);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQsNxBtEeqjYMyamv5Nwg" name="displayMessage" specification="_-a-pIBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fQsOBBtEeqjYMyamv5Nwg" name="message">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>textArea.append(message + &quot;\n&quot;);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fRTQBBtEeqjYMyamv5Nwg" name="displayComponent" specification="_-ecM0BBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fRTQRBtEeqjYMyamv5Nwg" name="component" type="_-dgYsRBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>System.out.println(&quot;Displaying component in view&quot;);
+		
+//		remove(scrollPane);
+//		add(component, BorderLayout.CENTER);
+//		
+//		remove(this.splitPane_1);
+//		JButton closeImageButton = new JButton(&quot;Close image&quot;);
+//		closeImageButton.addActionListener(new ActionListener() {
+//
+//			@Override
+//			public void actionPerformed(ActionEvent e) {
+//				remove(component);
+//				add(scrollPane, BorderLayout.CENTER);
+//				remove(closeImageButton);
+//				add(splitPane_1, BorderLayout.PAGE_START);
+//			}
+//			
+//		});
+//		add(closeImageButton, BorderLayout.PAGE_START);
+		
+		
+		JFrame imageFrame = new JFrame();
+		imageFrame.getContentPane().add(component);
+		imageFrame.setBounds(new Rectangle(800,800));
+//		imageFrame.pack();
+		imageFrame.setVisible(true);
+		
+//		add(imageFrame);
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fRTQhBtEeqjYMyamv5Nwg" name="addComponent" specification="_-ecz4RBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fRTQxBtEeqjYMyamv5Nwg" name="component" type="_-dgYsRBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>add(component, BorderLayout.CENTER);
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_-a-CEBBtEeqjYMyamv5Nwg" name="initGUI" visibility="private" method="_-fQsNRBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWy0RBtEeqjYMyamv5Nwg">
+                  <body>Initialization the GUI components.</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-a-CERBtEeqjYMyamv5Nwg" name="start" method="_-fQsNhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWy0hBtEeqjYMyamv5Nwg">
+                  <body>Start the GUI frame.</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-a-pIBBtEeqjYMyamv5Nwg" name="displayMessage" method="_-fQsNxBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWy0xBtEeqjYMyamv5Nwg">
+                  <body>Method for displaying text messages.
+	 * @param message the string messages.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-a-pIRBtEeqjYMyamv5Nwg" name="message">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-dubIBBtEeqjYMyamv5Nwg" name="ClientMiniView" method="_-fQsMhBtEeqjYMyamv5Nwg">
+                <eAnnotations xmi:id="_-dvCMRBtEeqjYMyamv5Nwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_-dvCMhBtEeqjYMyamv5Nwg" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_-fWy0BBtEeqjYMyamv5Nwg">
+                  <body>The constructor of mini view.
+	 * @param miniViewAdapter adapter for view to update.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-dvCMBBtEeqjYMyamv5Nwg" name="miniViewAdapter" type="_-aPpURBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-dvCMxBtEeqjYMyamv5Nwg" type="_-a8M4BBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ecM0BBtEeqjYMyamv5Nwg" name="displayComponent" method="_-fRTQBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWy1BBtEeqjYMyamv5Nwg">
+                  <body>Method for displaying a JComponent in the view.
+	 * @param component the JComponent to be displayed.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ecz4BBtEeqjYMyamv5Nwg" name="component" type="_-dgYsRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ecz4RBtEeqjYMyamv5Nwg" name="addComponent" method="_-fRTQhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWy1RBtEeqjYMyamv5Nwg">
+                  <body>Method for displaying a component upon receiving a certain message.
+	 * @param component The component to be displaying while removing the existing components.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-ecz4hBtEeqjYMyamv5Nwg" name="component" type="_-dgYsRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-eIq0BBtEeqjYMyamv5Nwg" name="TMessage"/>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fyQoBBtEeqjYMyamv5Nwg" name="" memberEnd="_-fyQoRBtEeqjYMyamv5Nwg _-e78EBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fyQoRBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-fyQoBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fyQoxBtEeqjYMyamv5Nwg" name="" memberEnd="_-fyQpBBtEeqjYMyamv5Nwg _-e78ExBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fyQpBBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-fyQoxBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fy3sRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fy3shBtEeqjYMyamv5Nwg _-e8jIRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fy3shBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-fy3sRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fzewRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fzewhBtEeqjYMyamv5Nwg _-e9KMRBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fzewhBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-fzewRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f0F0RBtEeqjYMyamv5Nwg" name="" memberEnd="_-f0F0hBtEeqjYMyamv5Nwg _-e9xQBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f0F0hBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-f0F0RBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f0s4BBtEeqjYMyamv5Nwg" name="" memberEnd="_-f0s4RBtEeqjYMyamv5Nwg _-e-YUBBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f0s4RBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-f0s4BBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f0s4xBtEeqjYMyamv5Nwg" name="" memberEnd="_-f0s5BBtEeqjYMyamv5Nwg _-e-YUxBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f0s5BBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-f0s4xBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f1T8RBtEeqjYMyamv5Nwg" name="" memberEnd="_-f1T8hBtEeqjYMyamv5Nwg _-e-_YhBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f1T8hBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-f1T8RBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f1T9BBtEeqjYMyamv5Nwg" name="" memberEnd="_-f1T9RBtEeqjYMyamv5Nwg _-e_mchBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f1T9RBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-f1T9BBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-f17ARBtEeqjYMyamv5Nwg" name="" memberEnd="_-f17AhBtEeqjYMyamv5Nwg _-fANghBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-f17AhBtEeqjYMyamv5Nwg" name="" type="_-a8M4BBtEeqjYMyamv5Nwg" association="_-f17ARBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_-ZXfkBBtEeqjYMyamv5Nwg" name="clientMiniModel">
+            <packagedElement xmi:type="uml:Class" xmi:id="_-a0REBBtEeqjYMyamv5Nwg" name="ClientMiniModel">
+              <ownedComment xmi:id="_-fWLxBBtEeqjYMyamv5Nwg">
+                <body>Definition of the mini model that holds a chat room.
+@author skylar, minh
+ *</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_-e5f0BBtEeqjYMyamv5Nwg" name="myUser" visibility="private" type="_-dfxoBBtEeqjYMyamv5Nwg" association="_-fv0ZBBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e5f0hBtEeqjYMyamv5Nwg" name="myUserStub" visibility="private" type="_-dFh8RBtEeqjYMyamv5Nwg" association="_-fwbcRBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e6G4RBtEeqjYMyamv5Nwg" name="myTeam" visibility="private" type="_-dH-MRBtEeqjYMyamv5Nwg" association="_-fxCgRBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e6G4xBtEeqjYMyamv5Nwg" name="_miniModelUpdateAdater" visibility="private" type="_-a6-wBBtEeqjYMyamv5Nwg" association="_-fxChBBtEeqjYMyamv5Nwg"/>
+              <ownedAttribute xmi:id="_-e6t8RBtEeqjYMyamv5Nwg" name="cmdToModelAdpt" visibility="private" type="_-dlRMRBtEeqjYMyamv5Nwg" association="_-fxpkRBtEeqjYMyamv5Nwg"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fPeExBtEeqjYMyamv5Nwg" name="ClientMiniModel" specification="_-eYicBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fPeFBBtEeqjYMyamv5Nwg" name="roomID" type="_-dDswRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fPeFRBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-fPeFhBtEeqjYMyamv5Nwg" name="userName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-fPeFxBtEeqjYMyamv5Nwg" name="currentMembers" type="_-dDFsRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fPeGBBtEeqjYMyamv5Nwg" name="miniModelUpdateAdapter" type="_-a6-wBBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-fPeGRBtEeqjYMyamv5Nwg" type="_-a0REBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>// Create an IUser
+		this.myUser = new Player(roomName, userName);
+		try {
+			myUserStub = (IPlayer) UnicastRemoteObject.exportObject((IPlayer) myUser, IRMI_Defs.STUB_PORT_SERVER);
+			// Create an ITeam
+			this.myTeam = new Team(roomID, roomName, myUserStub, userName);
+			this.myUser.setMsgProcessingAlgo(this.myTeam.getMessageProcessingAlgo());
+			
+			// Add the people to your list of stubs
+			for (IPlayer currentMember : currentMembers) {
+				this.myTeam.addUser(currentMember);
+			}
+			
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		this._miniModelUpdateAdater = miniModelUpdateAdapter;
+		this.cmdToModelAdpt = new ICmd2ModelAdapter() {
+			
+
+			@Override
+			public void displayComponent(Supplier&lt;JComponent> componentFac) {
+				// TODO Auto-generated method stub
+				System.out.println(&quot;Displaying component in cmd2model adapter&quot;);
+				System.out.println(componentFac.get());
+				_miniModelUpdateAdater.displayComponent(componentFac.get());
+				
+			}
+
+			@Override
+			public void displayText(String text) {
+				_miniModelUpdateAdater.displayMessage(text);
+
+			}
+
+			@Override
+			public void sendMessageToMember(ADataPacket message, IPlayer member) {
+//				try {
+//					ConnectionDataPacket&lt;IConnectMsg> msg = new ConnectionDataPacket&lt;IConnectMsg>(new IConnectMsg(), myUserStub);
+//					member.receiveMsg(msg);
+//				} catch (RemoteException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+			}
+
+			@Override
+			public void sendMessageToRoom(ADataPacket message) {
+//				ConnectionDataPacket&lt;ITeamMsg> msg = new TeamDataPacket&lt;ITeamMsg>(message, myUserStub);
+//				myTeam.sendTeamMsg(msg);
+			}
+
+			@Override
+			public String getLocalAPIKey() {
+				// TODO Auto-generated method stub
+				return null;
+			}
+
+		};
+		
+		myUser.setCRMtoMiniModelAdapter(new ITeamToMiniModelAdapter() {
+			
+			@Override
+			public ICmd2ModelAdapter getCmdToModelAdapter() {
+				return cmdToModelAdpt;
+			}
+
+		});
+		
+		myTeam.setCRMtoMiniModelAdapter(new ITeamToMiniModelAdapter() {
+			
+			@Override
+			public ICmd2ModelAdapter getCmdToModelAdapter() {
+				return cmdToModelAdpt;
+			}
+
+		});
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fPeGhBtEeqjYMyamv5Nwg" name="leave" specification="_-a2GQBBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>//		System.out.println(&quot;Sending a leave message to &quot; + myTeam.getPlayers().size() + &quot;members&quot;);
+//		GameDataPacket&lt;IPlayerMsg> leaveMessage = new GameDataPacket&lt;IPlayerMsg>(ILeaveMsg.make(this.myTeam.getMe()), this.myTeam.getMe());
+//		this.myTeam.sendTeamMsg(leaveMessage);
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQFIBBtEeqjYMyamv5Nwg" name="getTeam" specification="_-a2tUBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fQFIRBtEeqjYMyamv5Nwg" type="_-dH-MRBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>return myTeam;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQFIhBtEeqjYMyamv5Nwg" name="getUser" specification="_-a2tURBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fQFIxBtEeqjYMyamv5Nwg" type="_-dfxoBBtEeqjYMyamv5Nwg" direction="return"/>
+                <language>java</language>
+                <body>return myUser;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQFJBBtEeqjYMyamv5Nwg" name="sendMessage" specification="_-eaXoBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fQFJRBtEeqjYMyamv5Nwg" name="messageData" type="_-dg_wRBtEeqjYMyamv5Nwg"/>
+                <language>java</language>
+                <body>GameDataPacket&lt;IPlayerMsg> message = new GameDataPacket&lt;IPlayerMsg>(messageData, this.myUserStub);
+		this.myTeam.sendMsg(message);
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQFJhBtEeqjYMyamv5Nwg" name="joinRoom" specification="_-a37cRBtEeqjYMyamv5Nwg">
+                <language>java</language>
+                <body>sendMessage(IJoinedTeamMsg.make(this.myUserStub));
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQFJxBtEeqjYMyamv5Nwg" name="sendTextMsg" specification="_-a37chBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fQFKBBtEeqjYMyamv5Nwg" name="text">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>try {
+			this._miniModelUpdateAdater.displayMessage(myUser.getName() + &quot;: &quot; + text);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println(&quot;shit&quot;);
+		GameDataPacket&lt;IPlayerMsg> message = new GameDataPacket&lt;IPlayerMsg>(IStringMsg.make(text), this.myUserStub);
+		this.myTeam.sendChatRoomMsg(message);
+		System.out.println(&quot;---------&quot;);
+		
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_-fQsMBBtEeqjYMyamv5Nwg" name="sendImageMsg" specification="_-a4igBBtEeqjYMyamv5Nwg">
+                <ownedParameter xmi:id="_-fQsMRBtEeqjYMyamv5Nwg" name="imgName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>//		TeamDataPacket&lt;ITeamMsg> message;
+//		try {
+//			message = new TeamDataPacket&lt;ITeamMsg>(new ImageMessage(imgName), this.myUserStub);
+//			this.myTeam.sendTeamMsg(message);
+//			
+//			this._miniModelUpdateAdater.displayComponent(new JLabel(((ImageMessage)message.getData()).getImage()));
+//		} catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//			System.out.println(&quot;Error sending image!&quot;);
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_-a2GQBBtEeqjYMyamv5Nwg" name="leave" method="_-fPeGhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLxhBtEeqjYMyamv5Nwg">
+                  <body>Method processing the holder of chat room leaving the room.</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-a2tUBBtEeqjYMyamv5Nwg" name="getTeam" method="_-fQFIBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLxxBtEeqjYMyamv5Nwg">
+                  <body>Getter method of the chat room.
+	 * @return the chat room held in the mini MVC.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eZwkRBtEeqjYMyamv5Nwg" type="_-dH-MRBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-a2tURBtEeqjYMyamv5Nwg" name="getUser" method="_-fQFIhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLyBBtEeqjYMyamv5Nwg">
+                  <body>Getter method of the user holding the chat room.
+	 * @return the user holding the chat room.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eZwkhBtEeqjYMyamv5Nwg" type="_-dfxoBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-a3UYBBtEeqjYMyamv5Nwg" name="start"/>
+              <ownedOperation xmi:id="_-a37cRBtEeqjYMyamv5Nwg" name="joinRoom" method="_-fQFJhBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLyhBtEeqjYMyamv5Nwg">
+                  <body>Tells all members to add me as a new member when the user joins.</body>
+                </ownedComment>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-a37chBtEeqjYMyamv5Nwg" name="sendTextMsg" method="_-fQFJxBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLyxBtEeqjYMyamv5Nwg">
+                  <body>Sends the message to other members in the chat room.
+	 * @param text the String messages to be sent.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-a37cxBtEeqjYMyamv5Nwg" name="text">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-a4igBBtEeqjYMyamv5Nwg" name="sendImageMsg" method="_-fQsMBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLzBBtEeqjYMyamv5Nwg">
+                  <body>Method for sending an image to members in the chat room.
+	 * @param imgName the file name of the image stored in &quot;images&quot; package.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-a4igRBtEeqjYMyamv5Nwg" name="imgName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eYicBBtEeqjYMyamv5Nwg" name="ClientMiniModel" method="_-fPeExBtEeqjYMyamv5Nwg">
+                <eAnnotations xmi:id="_-eZJgxBtEeqjYMyamv5Nwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_-eZJhBBtEeqjYMyamv5Nwg" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_-fWLxRBtEeqjYMyamv5Nwg">
+                  <body>Constructor of the mini model.
+	 * @param roomID the ID of the chat room held.
+	 * @param roomName the name of the chat room held.
+	 * @param userName the user holding the chat room.
+	 * @param currentMembers the collection of members in the chat room.
+	 * @param miniModelUpdateAdapter adapter for the model to update its information.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eYicRBtEeqjYMyamv5Nwg" name="roomID" type="_-dDswRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eYichBtEeqjYMyamv5Nwg" name="roomName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-eZJgBBtEeqjYMyamv5Nwg" name="userName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_-eZJgRBtEeqjYMyamv5Nwg" name="currentMembers" type="_-dDFsRBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eZJghBtEeqjYMyamv5Nwg" name="miniModelUpdateAdapter" type="_-a6-wBBtEeqjYMyamv5Nwg"/>
+                <ownedParameter xmi:id="_-eZJhRBtEeqjYMyamv5Nwg" type="_-a0REBBtEeqjYMyamv5Nwg" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-eaXoBBtEeqjYMyamv5Nwg" name="sendMessage" method="_-fQFJBBtEeqjYMyamv5Nwg">
+                <ownedComment xmi:id="_-fWLyRBtEeqjYMyamv5Nwg">
+                  <body>Process the user sending messages to all other members in the chatroom.
+	 * @param messageData the message to be sent to all other members.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_-eaXoRBtEeqjYMyamv5Nwg" name="messageData" type="_-dg_wRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Interface" xmi:id="_-a6-wBBtEeqjYMyamv5Nwg" name="IMiniModel2ViewAdapter">
+              <ownedComment xmi:id="_-fWLzRBtEeqjYMyamv5Nwg">
+                <body>Adapter for the mini model to communicate to the mini view
+@author skylar, minh
+ *</body>
+              </ownedComment>
+              <ownedOperation xmi:id="_-a7l0BBtEeqjYMyamv5Nwg" name="displayMessage">
+                <ownedParameter xmi:id="_-a7l0RBtEeqjYMyamv5Nwg" name="message">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_-ea-sBBtEeqjYMyamv5Nwg" name="displayComponent">
+                <ownedParameter xmi:id="_-ea-sRBtEeqjYMyamv5Nwg" name="component" type="_-dgYsRBtEeqjYMyamv5Nwg"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fv0ZBBtEeqjYMyamv5Nwg" name="" memberEnd="_-fv0ZRBtEeqjYMyamv5Nwg _-e5f0BBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fv0ZRBtEeqjYMyamv5Nwg" name="" type="_-a0REBBtEeqjYMyamv5Nwg" association="_-fv0ZBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fwbcRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fwbchBtEeqjYMyamv5Nwg _-e5f0hBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fwbchBtEeqjYMyamv5Nwg" name="" type="_-a0REBBtEeqjYMyamv5Nwg" association="_-fwbcRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fxCgRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fxCghBtEeqjYMyamv5Nwg _-e6G4RBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fxCghBtEeqjYMyamv5Nwg" name="" type="_-a0REBBtEeqjYMyamv5Nwg" association="_-fxCgRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fxChBBtEeqjYMyamv5Nwg" name="" memberEnd="_-fxChRBtEeqjYMyamv5Nwg _-e6G4xBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fxChRBtEeqjYMyamv5Nwg" name="" type="_-a0REBBtEeqjYMyamv5Nwg" association="_-fxChBBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_-fxpkRBtEeqjYMyamv5Nwg" name="" memberEnd="_-fxpkhBtEeqjYMyamv5Nwg _-e6t8RBtEeqjYMyamv5Nwg">
+              <ownedEnd xmi:id="_-fxpkhBtEeqjYMyamv5Nwg" name="" type="_-a0REBBtEeqjYMyamv5Nwg" association="_-fxpkRBtEeqjYMyamv5Nwg"/>
+            </packagedElement>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-auKcBBtEeqjYMyamv5Nwg" name="IMainAccessMiniAdapter">
+            <ownedComment xmi:id="_-fVkvRBtEeqjYMyamv5Nwg">
+              <body>The adapter for to allow the main MVC to access methods in the mini MVC.
+@author skylar, minh
+ *</body>
+            </ownedComment>
+            <ownedAttribute xmi:id="_-auxgRBtEeqjYMyamv5Nwg" name="chatUser" type="_-dfxoBBtEeqjYMyamv5Nwg" isReadOnly="true" association="_-ffVsRBtEeqjYMyamv5Nwg"/>
+            <ownedOperation xmi:id="_-auxgBBtEeqjYMyamv5Nwg" name="getChatRoom">
+              <ownedComment xmi:id="_-fVkvhBtEeqjYMyamv5Nwg">
+                <body>Abstract method of getting the chat room in a mini MVC.
+	 * @return the chat room held in the mini MVC.</body>
+              </ownedComment>
+              <ownedParameter xmi:id="_-eWGMhBtEeqjYMyamv5Nwg" type="_-dH-MRBtEeqjYMyamv5Nwg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_-avYkBBtEeqjYMyamv5Nwg" name="joinRoom">
+              <ownedComment xmi:id="_-fVkvxBtEeqjYMyamv5Nwg">
+                <body>Method for telling all other memebrs that the user joined the room.</body>
+              </ownedComment>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_-ffVsRBtEeqjYMyamv5Nwg" name="" memberEnd="_-ffVshBtEeqjYMyamv5Nwg _-auxgRBtEeqjYMyamv5Nwg">
+            <ownedEnd xmi:id="_-ffVshBtEeqjYMyamv5Nwg" name="" type="_-auKcBBtEeqjYMyamv5Nwg" association="_-ffVsRBtEeqjYMyamv5Nwg"/>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-Y3JQBBtEeqjYMyamv5Nwg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-Y3JQRBtEeqjYMyamv5Nwg" name="awt">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-ZJdIBBtEeqjYMyamv5Nwg" name="event">
+          <packagedElement xmi:type="uml:Class" xmi:id="_-dOr4BBtEeqjYMyamv5Nwg" name="ActionEvent"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-dOr4hBtEeqjYMyamv5Nwg" name="ActionListener"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dACYBBtEeqjYMyamv5Nwg" name="EventQueue"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dMPoBBtEeqjYMyamv5Nwg" name="BorderLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dM2sRBtEeqjYMyamv5Nwg" name="Color"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dNdwRBtEeqjYMyamv5Nwg" name="Dimension"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dOE0RBtEeqjYMyamv5Nwg" name="GridLayout"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dsl8RBtEeqjYMyamv5Nwg" name="Rectangle"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dt0EBBtEeqjYMyamv5Nwg" name="ScrollPane"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-Y3JQhBtEeqjYMyamv5Nwg" name="util">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-Y3JQxBtEeqjYMyamv5Nwg" name="function">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-dBQgRBtEeqjYMyamv5Nwg" name="Consumer"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-dkqIRBtEeqjYMyamv5Nwg" name="Supplier"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dCeoBBtEeqjYMyamv5Nwg" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_-dDFsRBtEeqjYMyamv5Nwg" name="Collection"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dDswRBtEeqjYMyamv5Nwg" name="UUID"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dz6sRBtEeqjYMyamv5Nwg" name="HashMap"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-ZZUwBBtEeqjYMyamv5Nwg" name="rmi">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-ZZ70BBtEeqjYMyamv5Nwg" name="server">
+          <packagedElement xmi:type="uml:Class" xmi:id="_-dkDERBtEeqjYMyamv5Nwg" name="UnicastRemoteObject"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-ZiesBBtEeqjYMyamv5Nwg" name="registry">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-dzToRBtEeqjYMyamv5Nwg" name="Registry"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-djcABBtEeqjYMyamv5Nwg" name="RemoteException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dyFgBBtEeqjYMyamv5Nwg" name="AlreadyBoundException"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-Y3wUBBtEeqjYMyamv5Nwg" name="common">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-ZW4gBBtEeqjYMyamv5Nwg" name="msg">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-ZW4gRBtEeqjYMyamv5Nwg" name="playerTeamMsg">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-dg_wRBtEeqjYMyamv5Nwg" name="IPlayerMsg"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-dl4QRBtEeqjYMyamv5Nwg" name="IJoinedTeamMsg"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-dmfURBtEeqjYMyamv5Nwg" name="GameDataPacket"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-dnGYRBtEeqjYMyamv5Nwg" name="IStringMsg"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d4zMhBtEeqjYMyamv5Nwg" name="ILeaveMsg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-ZjFwBBtEeqjYMyamv5Nwg" name="connectionLevelMsg">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d2W8RBtEeqjYMyamv5Nwg" name="IAddToTeamMsg"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d2W8xBtEeqjYMyamv5Nwg" name="IConnectMsg"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d2-ARBtEeqjYMyamv5Nwg" name="IJoinTeamMsg"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d3lEBBtEeqjYMyamv5Nwg" name="IQuitMsg"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d3lEhBtEeqjYMyamv5Nwg" name="IRequestTeamsCollectionMsg"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d4zMBBtEeqjYMyamv5Nwg" name="IReturnTeamsCollectionMsg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_-Zjs0BBtEeqjYMyamv5Nwg" name="status">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d5aQRBtEeqjYMyamv5Nwg" name="IFailureMsg"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_-d6BURBtEeqjYMyamv5Nwg" name="ISuccessMsg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-d1I0RBtEeqjYMyamv5Nwg" name="AConnectionMsgCmd"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-d1v4BBtEeqjYMyamv5Nwg" name="ConnectionDataPacket"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_-d1v4hBtEeqjYMyamv5Nwg" name="IClientServerMsg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_-dET0RBtEeqjYMyamv5Nwg" name="IClient"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_-dE64RBtEeqjYMyamv5Nwg" name="IConnection"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_-dFh8RBtEeqjYMyamv5Nwg" name="IPlayer"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_-dlRMRBtEeqjYMyamv5Nwg" name="ICmd2ModelAdapter"/>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_-d0hwRBtEeqjYMyamv5Nwg" name="ITeam"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-Y3wURBtEeqjYMyamv5Nwg" name="provided">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-Y3wUhBtEeqjYMyamv5Nwg" name="discovery">
+        <packagedElement xmi:type="uml:Package" xmi:id="_-Y3wUxBtEeqjYMyamv5Nwg" name="impl">
+          <packagedElement xmi:type="uml:Package" xmi:id="_-Y3wVBBtEeqjYMyamv5Nwg" name="view">
+            <packagedElement xmi:type="uml:Interface" xmi:id="_-dGwERBtEeqjYMyamv5Nwg" name="IDiscoveryPanelAdapter"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-dTkYRBtEeqjYMyamv5Nwg" name="DiscoveryPanel"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_-Zjs0RBtEeqjYMyamv5Nwg" name="model">
+            <packagedElement xmi:type="uml:Class" xmi:id="_-d7PcxBtEeqjYMyamv5Nwg" name="DiscoveryConnector"/>
+            <packagedElement xmi:type="uml:Class" xmi:id="_-d72gRBtEeqjYMyamv5Nwg" name="RemoteAPIStubFactory"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_-dGJARBtEeqjYMyamv5Nwg" name="IEndPointData"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-ZZ70RBtEeqjYMyamv5Nwg" name="datapacket">
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dntcBBtEeqjYMyamv5Nwg" name="ADataPacket"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-d6oYRBtEeqjYMyamv5Nwg" name="DataPacketAlgo"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_-d7PcRBtEeqjYMyamv5Nwg" name="IDataPacketID"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-ZZ70hBtEeqjYMyamv5Nwg" name="rmiUtils">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_-dntchBtEeqjYMyamv5Nwg" name="IRMI_Defs"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-d8dkRBtEeqjYMyamv5Nwg" name="RMIUtils"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-ZJdIRBtEeqjYMyamv5Nwg" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_-ZJdIhBtEeqjYMyamv5Nwg" name="swing">
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dPS8RBtEeqjYMyamv5Nwg" name="JButton"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dP6ARBtEeqjYMyamv5Nwg" name="JComboBox"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dQhERBtEeqjYMyamv5Nwg" name="JFrame"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dRIIRBtEeqjYMyamv5Nwg" name="JLabel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dRvMRBtEeqjYMyamv5Nwg" name="JPanel"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dSWQRBtEeqjYMyamv5Nwg" name="JTabbedPane"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dS9URBtEeqjYMyamv5Nwg" name="JTextField"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dgYsRBtEeqjYMyamv5Nwg" name="JComponent"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-drX0BBtEeqjYMyamv5Nwg" name="JTextArea"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_-dr-4RBtEeqjYMyamv5Nwg" name="SwingConstants"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_-dtNABBtEeqjYMyamv5Nwg" name="JSplitPane"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_-FPCoBBtEeqjYMyamv5Nwg">
+      <eAnnotations xmi:id="_-FPCoRBtEeqjYMyamv5Nwg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_-FPCohBtEeqjYMyamv5Nwg" base_Package="_95uWMBBtEeqjYMyamv5Nwg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Generics xmi:id="_-aQQYBBtEeqjYMyamv5Nwg" genericsValue="TMessage" base_Element="_-aPpURBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-aYzQBBtEeqjYMyamv5Nwg" genericsValue="TEndPoint" base_Element="_-aXlIBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-arHIBBtEeqjYMyamv5Nwg" genericsValue="UserWrapper" base_Element="_-ap5ABBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-asVQBBtEeqjYMyamv5Nwg" genericsValue="TeamWrapper" base_Element="_-aruMBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-a37cBBtEeqjYMyamv5Nwg" base_Element="_-a3UYBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-bJoQBBtEeqjYMyamv5Nwg" genericsValue="IConnection" base_Element="_-bIaIBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-bK2YBBtEeqjYMyamv5Nwg" genericsValue="Team" base_Element="_-bKPUBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dBQgBBtEeqjYMyamv5Nwg" base_Element="_-dACYBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dB3kBBtEeqjYMyamv5Nwg" base_Element="_-dBQgRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dDFsBBtEeqjYMyamv5Nwg" base_Element="_-dCeoBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dDswBBtEeqjYMyamv5Nwg" base_Element="_-dDFsRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dET0BBtEeqjYMyamv5Nwg" base_Element="_-dDswRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dE64BBtEeqjYMyamv5Nwg" base_Element="_-dET0RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dFh8BBtEeqjYMyamv5Nwg" base_Element="_-dE64RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dGJABBtEeqjYMyamv5Nwg" base_Element="_-dFh8RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dGwEBBtEeqjYMyamv5Nwg" base_Element="_-dGJARBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dHXIBBtEeqjYMyamv5Nwg" base_Element="_-dGwERBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dH-MBBtEeqjYMyamv5Nwg" base_Element="_-dHXIRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dIlQBBtEeqjYMyamv5Nwg" base_Element="_-dH-MRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dJMUBBtEeqjYMyamv5Nwg" base_Element="_-dIlQRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dJzYBBtEeqjYMyamv5Nwg" base_Element="_-dJMURBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dM2sBBtEeqjYMyamv5Nwg" base_Element="_-dMPoBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dNdwBBtEeqjYMyamv5Nwg" base_Element="_-dM2sRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dOE0BBtEeqjYMyamv5Nwg" base_Element="_-dNdwRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dOE0hBtEeqjYMyamv5Nwg" base_Element="_-dOE0RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dOr4RBtEeqjYMyamv5Nwg" base_Element="_-dOr4BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dPS8BBtEeqjYMyamv5Nwg" base_Element="_-dOr4hBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dP6ABBtEeqjYMyamv5Nwg" base_Element="_-dPS8RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dQhEBBtEeqjYMyamv5Nwg" base_Element="_-dP6ARBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dRIIBBtEeqjYMyamv5Nwg" base_Element="_-dQhERBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dRvMBBtEeqjYMyamv5Nwg" base_Element="_-dRIIRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dSWQBBtEeqjYMyamv5Nwg" base_Element="_-dRvMRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dS9UBBtEeqjYMyamv5Nwg" base_Element="_-dSWQRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dTkYBBtEeqjYMyamv5Nwg" base_Element="_-dS9URBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dULcBBtEeqjYMyamv5Nwg" base_Element="_-dTkYRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dgYsBBtEeqjYMyamv5Nwg" base_Element="_-dfxoBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dg_wBBtEeqjYMyamv5Nwg" base_Element="_-dgYsRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dhm0BBtEeqjYMyamv5Nwg" base_Element="_-dg_wRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dkDEBBtEeqjYMyamv5Nwg" base_Element="_-djcABBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dkqIBBtEeqjYMyamv5Nwg" base_Element="_-dkDERBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dlRMBBtEeqjYMyamv5Nwg" base_Element="_-dkqIRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dl4QBBtEeqjYMyamv5Nwg" base_Element="_-dlRMRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dmfUBBtEeqjYMyamv5Nwg" base_Element="_-dl4QRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dnGYBBtEeqjYMyamv5Nwg" base_Element="_-dmfURBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dnGYhBtEeqjYMyamv5Nwg" base_Element="_-dnGYRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dntcRBtEeqjYMyamv5Nwg" base_Element="_-dntcBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-doUgBBtEeqjYMyamv5Nwg" base_Element="_-dntchBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dr-4BBtEeqjYMyamv5Nwg" base_Element="_-drX0BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dsl8BBtEeqjYMyamv5Nwg" base_Element="_-dr-4RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dsl8hBtEeqjYMyamv5Nwg" base_Element="_-dsl8RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dtNARBtEeqjYMyamv5Nwg" base_Element="_-dtNABBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dt0ERBtEeqjYMyamv5Nwg" base_Element="_-dt0EBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-dvpQBBtEeqjYMyamv5Nwg" genericsValue="?" base_Element="_-dvCMBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dzToBBtEeqjYMyamv5Nwg" base_Element="_-dyFgBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-dz6sBBtEeqjYMyamv5Nwg" base_Element="_-dzToRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d0hwBBtEeqjYMyamv5Nwg" base_Element="_-dz6sRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d1I0BBtEeqjYMyamv5Nwg" base_Element="_-d0hwRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d1I0hBtEeqjYMyamv5Nwg" base_Element="_-d1I0RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d1v4RBtEeqjYMyamv5Nwg" base_Element="_-d1v4BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d2W8BBtEeqjYMyamv5Nwg" base_Element="_-d1v4hBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d2W8hBtEeqjYMyamv5Nwg" base_Element="_-d2W8RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d2-ABBtEeqjYMyamv5Nwg" base_Element="_-d2W8xBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d2-AhBtEeqjYMyamv5Nwg" base_Element="_-d2-ARBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d3lERBtEeqjYMyamv5Nwg" base_Element="_-d3lEBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d4MIBBtEeqjYMyamv5Nwg" base_Element="_-d3lEhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d4zMRBtEeqjYMyamv5Nwg" base_Element="_-d4zMBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d5aQBBtEeqjYMyamv5Nwg" base_Element="_-d4zMhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d6BUBBtEeqjYMyamv5Nwg" base_Element="_-d5aQRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d6oYBBtEeqjYMyamv5Nwg" base_Element="_-d6BURBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d7PcBBtEeqjYMyamv5Nwg" base_Element="_-d6oYRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d7PchBtEeqjYMyamv5Nwg" base_Element="_-d7PcRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d72gBBtEeqjYMyamv5Nwg" base_Element="_-d7PcxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d8dkBBtEeqjYMyamv5Nwg" base_Element="_-d72gRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-d8dkhBtEeqjYMyamv5Nwg" base_Element="_-d8dkRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-eIq0RBtEeqjYMyamv5Nwg" base_Element="_-eIq0BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-eJ48BBtEeqjYMyamv5Nwg" genericsValue="IPlayer" base_Element="_-eJR5BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-ePYgBBtEeqjYMyamv5Nwg" genericsValue="TEndPoint" base_Element="_-eOxcRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-eXUUxBtEeqjYMyamv5Nwg" genericsValue="IPlayer" base_Element="_-eWtRBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-eZwkBBtEeqjYMyamv5Nwg" genericsValue="IPlayer" base_Element="_-eZJgRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-egeQBBtEeqjYMyamv5Nwg" genericsValue="? extends IClientServerMsg" base_Element="_-ef3MhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-ehFUBBtEeqjYMyamv5Nwg" genericsValue="Iterable&lt;IEndPointData>" base_Element="_-egeRBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-enL8RBtEeqjYMyamv5Nwg" base_Element="_-enL8BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-enzARBtEeqjYMyamv5Nwg" base_Element="_-enzABBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Annotations xmi:id="_-eoaEBBtEeqjYMyamv5Nwg" base_Element="_-enzABBtEeqjYMyamv5Nwg">
+    <annotations xmi:id="_-epBIBBtEeqjYMyamv5Nwg" name="SuppressWarnings">
+      <annotationParameters xmi:id="_-epBIRBtEeqjYMyamv5Nwg" skipName="true" skipArray="true">
+        <valueSpecifications xmi:type="uml:LiteralString" xmi:id="_-fUWkBBtEeqjYMyamv5Nwg" value="&quot;rawtypes&quot;"/>
+      </annotationParameters>
+    </annotations>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-eqPQBBtEeqjYMyamv5Nwg" base_Element="_-epoMhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-eqPQxBtEeqjYMyamv5Nwg" base_Element="_-eqPQRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-eq2UhBtEeqjYMyamv5Nwg" base_Element="_-eq2UBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-erdYRBtEeqjYMyamv5Nwg" base_Element="_-eq2UxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-esEcBBtEeqjYMyamv5Nwg" base_Element="_-erdYhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-esrgBBtEeqjYMyamv5Nwg" base_Element="_-esEcRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-esrghBtEeqjYMyamv5Nwg" genericsValue="UserWrapper" base_Element="_-esrgRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-etSkBBtEeqjYMyamv5Nwg" base_Element="_-esrgRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-et5oBBtEeqjYMyamv5Nwg" genericsValue="TeamWrapper" base_Element="_-etSkRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-et5ohBtEeqjYMyamv5Nwg" base_Element="_-etSkRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-eugsBBtEeqjYMyamv5Nwg" base_Element="_-et5oxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-eugsxBtEeqjYMyamv5Nwg" base_Element="_-eugsRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-evHwhBtEeqjYMyamv5Nwg" base_Element="_-evHwBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-evu0RBtEeqjYMyamv5Nwg" base_Element="_-evHwxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-evu1BBtEeqjYMyamv5Nwg" base_Element="_-evu0hBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-ewV4RBtEeqjYMyamv5Nwg" base_Element="_-ewV4BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-ewV5BBtEeqjYMyamv5Nwg" base_Element="_-ewV4hBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-ew88hBtEeqjYMyamv5Nwg" base_Element="_-ew88BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-exkABBtEeqjYMyamv5Nwg" genericsValue="TeamWrapper" base_Element="_-ew88xBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-exkAhBtEeqjYMyamv5Nwg" base_Element="_-ew88xBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-eyLERBtEeqjYMyamv5Nwg" base_Element="_-exkAxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-eyLFBBtEeqjYMyamv5Nwg" base_Element="_-eyLEhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-eyyIRBtEeqjYMyamv5Nwg" genericsValue="TEndPoint" base_Element="_-eyyIBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-ezZMBBtEeqjYMyamv5Nwg" base_Element="_-eyyIBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-ezZMhBtEeqjYMyamv5Nwg" genericsValue="TEndPoint" base_Element="_-ezZMRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e0AQBBtEeqjYMyamv5Nwg" base_Element="_-ezZMRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e0AQxBtEeqjYMyamv5Nwg" base_Element="_-e0AQRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e0nUhBtEeqjYMyamv5Nwg" base_Element="_-e0nUBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e1OYBBtEeqjYMyamv5Nwg" base_Element="_-e0nUxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e1OYxBtEeqjYMyamv5Nwg" base_Element="_-e1OYRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-e11cBBtEeqjYMyamv5Nwg" genericsValue="UserWrapper" base_Element="_-e1OZBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e11chBtEeqjYMyamv5Nwg" base_Element="_-e1OZBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e2cgRBtEeqjYMyamv5Nwg" base_Element="_-e11cxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e3DkBBtEeqjYMyamv5Nwg" base_Element="_-e2cghBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e3DkxBtEeqjYMyamv5Nwg" base_Element="_-e3DkRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e4RsBBtEeqjYMyamv5Nwg" base_Element="_-e3qoBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e4RshBtEeqjYMyamv5Nwg" base_Element="_-e4RsRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e44wRBtEeqjYMyamv5Nwg" base_Element="_-e44wBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e44wxBtEeqjYMyamv5Nwg" base_Element="_-e44whBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e5f0RBtEeqjYMyamv5Nwg" base_Element="_-e5f0BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e6G4BBtEeqjYMyamv5Nwg" base_Element="_-e5f0hBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e6G4hBtEeqjYMyamv5Nwg" base_Element="_-e6G4RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e6t8BBtEeqjYMyamv5Nwg" base_Element="_-e6G4xBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e6t8hBtEeqjYMyamv5Nwg" base_Element="_-e6t8RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e78EhBtEeqjYMyamv5Nwg" base_Element="_-e78EBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e8jIBBtEeqjYMyamv5Nwg" base_Element="_-e78ExBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e9KMBBtEeqjYMyamv5Nwg" base_Element="_-e8jIRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e9KMxBtEeqjYMyamv5Nwg" base_Element="_-e9KMRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e9xQhBtEeqjYMyamv5Nwg" base_Element="_-e9xQBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e-YUhBtEeqjYMyamv5Nwg" base_Element="_-e-YUBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e-_YRBtEeqjYMyamv5Nwg" base_Element="_-e-YUxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-e_mcBBtEeqjYMyamv5Nwg" genericsValue="?" base_Element="_-e-_YhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-e_mcRBtEeqjYMyamv5Nwg" base_Element="_-e-_YhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fANgRBtEeqjYMyamv5Nwg" base_Element="_-e_mchBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fA0kBBtEeqjYMyamv5Nwg" base_Element="_-fANghBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fBboRBtEeqjYMyamv5Nwg" base_Element="_-fBboBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fCpwBBtEeqjYMyamv5Nwg" base_Element="_-fCCsBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-fDQ0BBtEeqjYMyamv5Nwg" genericsValue="IClientServerMsg" base_Element="_-fCpwRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fD34BBtEeqjYMyamv5Nwg" base_Element="_-fCpwRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-fEe8BBtEeqjYMyamv5Nwg" genericsValue="Void, Void" base_Element="_-fD34RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fEe8RBtEeqjYMyamv5Nwg" base_Element="_-fD34RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-fFGABBtEeqjYMyamv5Nwg" genericsValue="ITeam" base_Element="_-fEe8hBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fFtEBBtEeqjYMyamv5Nwg" base_Element="_-fEe8hBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-fGUIBBtEeqjYMyamv5Nwg" genericsValue="Team" base_Element="_-fFtERBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fGUIhBtEeqjYMyamv5Nwg" base_Element="_-fFtERBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fG7MRBtEeqjYMyamv5Nwg" base_Element="_-fG7MBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fG7MxBtEeqjYMyamv5Nwg" base_Element="_-fG7MhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fHiQRBtEeqjYMyamv5Nwg" base_Element="_-fHiQBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-fIJUBBtEeqjYMyamv5Nwg" genericsValue="IConnection" base_Element="_-fHiQhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fIJUhBtEeqjYMyamv5Nwg" base_Element="_-fHiQhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-fIwYBBtEeqjYMyamv5Nwg" genericsValue="IClient" base_Element="_-fIJUxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fIwYhBtEeqjYMyamv5Nwg" base_Element="_-fIJUxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fJXcRBtEeqjYMyamv5Nwg" base_Element="_-fJXcBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-fJ-gBBtEeqjYMyamv5Nwg" genericsValue="IClient" base_Element="_-fJXchBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fJ-gRBtEeqjYMyamv5Nwg" base_Element="_-fJXchBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Generics xmi:id="_-fKlkBBtEeqjYMyamv5Nwg" genericsValue="UUID, IMainAccessMiniAdapter" base_Element="_-fJ-ghBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_-fKlkhBtEeqjYMyamv5Nwg" base_Element="_-fJ-ghBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-feuoBBtEeqjYMyamv5Nwg" base_Element="_-feHkBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-ffVsBBtEeqjYMyamv5Nwg" base_Element="_-feuoRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-ff8wBBtEeqjYMyamv5Nwg" base_Element="_-ffVsRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fgj0BBtEeqjYMyamv5Nwg" base_Element="_-ff8wRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fgj0xBtEeqjYMyamv5Nwg" base_Element="_-fgj0RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fhK4BBtEeqjYMyamv5Nwg" base_Element="_-fgj1BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fhx8BBtEeqjYMyamv5Nwg" base_Element="_-fhK4RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fhx8xBtEeqjYMyamv5Nwg" base_Element="_-fhx8RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fiZABBtEeqjYMyamv5Nwg" base_Element="_-fhx9BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fjAEBBtEeqjYMyamv5Nwg" base_Element="_-fiZARBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fjnIBBtEeqjYMyamv5Nwg" base_Element="_-fjAERBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fkOMBBtEeqjYMyamv5Nwg" base_Element="_-fjnIRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fk1QBBtEeqjYMyamv5Nwg" base_Element="_-fkOMRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fmDYBBtEeqjYMyamv5Nwg" base_Element="_-fk1QRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fmqcBBtEeqjYMyamv5Nwg" base_Element="_-fmDYRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fnRgBBtEeqjYMyamv5Nwg" base_Element="_-fmqcRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fn4kBBtEeqjYMyamv5Nwg" base_Element="_-fnRgRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fn4kxBtEeqjYMyamv5Nwg" base_Element="_-fn4kRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fofoBBtEeqjYMyamv5Nwg" base_Element="_-fn4lBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fofoxBtEeqjYMyamv5Nwg" base_Element="_-fofoRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fpGshBtEeqjYMyamv5Nwg" base_Element="_-fpGsBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fptwBBtEeqjYMyamv5Nwg" base_Element="_-fpGsxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fqU0BBtEeqjYMyamv5Nwg" base_Element="_-fptwRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fqU0xBtEeqjYMyamv5Nwg" base_Element="_-fqU0RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fq74BBtEeqjYMyamv5Nwg" base_Element="_-fqU1BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fri8BBtEeqjYMyamv5Nwg" base_Element="_-fq74RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fri8xBtEeqjYMyamv5Nwg" base_Element="_-fri8RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fsKABBtEeqjYMyamv5Nwg" base_Element="_-fri9BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fsxEBBtEeqjYMyamv5Nwg" base_Element="_-fsKARBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fsxExBtEeqjYMyamv5Nwg" base_Element="_-fsxERBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-ftYIBBtEeqjYMyamv5Nwg" base_Element="_-fsxFBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-ft_MBBtEeqjYMyamv5Nwg" base_Element="_-ftYIRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-ft_MxBtEeqjYMyamv5Nwg" base_Element="_-ft_MRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fumQBBtEeqjYMyamv5Nwg" base_Element="_-ft_NBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fumQxBtEeqjYMyamv5Nwg" base_Element="_-fumQRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fvNURBtEeqjYMyamv5Nwg" base_Element="_-fumRBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fv0YBBtEeqjYMyamv5Nwg" base_Element="_-fvNUhBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fv0YxBtEeqjYMyamv5Nwg" base_Element="_-fv0YRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fwbcBBtEeqjYMyamv5Nwg" base_Element="_-fv0ZBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fxCgBBtEeqjYMyamv5Nwg" base_Element="_-fwbcRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fxCgxBtEeqjYMyamv5Nwg" base_Element="_-fxCgRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fxpkBBtEeqjYMyamv5Nwg" base_Element="_-fxChBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fxpkxBtEeqjYMyamv5Nwg" base_Element="_-fxpkRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fyQohBtEeqjYMyamv5Nwg" base_Element="_-fyQoBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fy3sBBtEeqjYMyamv5Nwg" base_Element="_-fyQoxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-fzewBBtEeqjYMyamv5Nwg" base_Element="_-fy3sRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f0F0BBtEeqjYMyamv5Nwg" base_Element="_-fzewRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f0F0xBtEeqjYMyamv5Nwg" base_Element="_-f0F0RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f0s4hBtEeqjYMyamv5Nwg" base_Element="_-f0s4BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f1T8BBtEeqjYMyamv5Nwg" base_Element="_-f0s4xBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f1T8xBtEeqjYMyamv5Nwg" base_Element="_-f1T8RBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f17ABBtEeqjYMyamv5Nwg" base_Element="_-f1T9BBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f2iEBBtEeqjYMyamv5Nwg" base_Element="_-f17ARBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f2iExBtEeqjYMyamv5Nwg" base_Element="_-f2iERBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f3JIhBtEeqjYMyamv5Nwg" base_Element="_-f3JIBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f3wMBBtEeqjYMyamv5Nwg" base_Element="_-f3JIxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f4XQBBtEeqjYMyamv5Nwg" base_Element="_-f3wMRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f4XQxBtEeqjYMyamv5Nwg" base_Element="_-f4XQRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f4-UBBtEeqjYMyamv5Nwg" base_Element="_-f4XRBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f4-UxBtEeqjYMyamv5Nwg" base_Element="_-f4-URBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f5lYhBtEeqjYMyamv5Nwg" base_Element="_-f5lYBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f6McBBtEeqjYMyamv5Nwg" base_Element="_-f5lYxBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f6McxBtEeqjYMyamv5Nwg" base_Element="_-f6McRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f6zgBBtEeqjYMyamv5Nwg" base_Element="_-f6MdBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f7akBBtEeqjYMyamv5Nwg" base_Element="_-f6zgRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f7akxBtEeqjYMyamv5Nwg" base_Element="_-f7akRBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f8BohBtEeqjYMyamv5Nwg" base_Element="_-f8BoBBtEeqjYMyamv5Nwg"/>
+  <UMLLabProfile:Reference xmi:id="_-f8osBBtEeqjYMyamv5Nwg" base_Element="_-f8BoxBtEeqjYMyamv5Nwg"/>
+</xmi:XMI>
